@@ -1,0 +1,16 @@
+PIG
+list[str]
+str
+tuple[any, any]
+str
+bytes
+str
+str
+str
+callable
+object
+object
+object
+object
+str
+Namespace

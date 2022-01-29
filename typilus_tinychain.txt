@@ -1,0 +1,103 @@
+
+raiden.utils.ChainID/str/optparse.Option
+List[Any]/raiden.utils.Tuple[raiden.utils.Tuple[raiden.utils.TokenAddress, raiden.utils.FeeAmount], ...]/List[cookiemonster.common.models.EnrichmentDiff]
+Tuple[numpy.datetime64, int]/Tuple[bytes, transaction.Transaction]/Tuple[str, int]
+Tuple[float, float, float, float]/Tuple[int, str]/Tuple[Any, Any]
+Tuple[numpy.datetime64, int]/Tuple[bytes, transaction.Transaction]/Tuple[str, int]
+raiden.utils.BlockHash
+str/bool/int
+Tuple[float, float, float, float]/Tuple[int, str]/Tuple[Any, Any]
+int/raiden.utils.BlockTimeout/bool
+Tuple[str, str]/Iterator[BlockPairInfo]/tuple
+Tuple[str, str]/Iterator[BlockPairInfo]/tuple
+ailment.Block/neo.Network.payloads.Block/mypyc.ir.ops.BasicBlock
+bool/Callable[[str, str], Awaitable[bool]]
+str/mypy.nodes.Block/int
+ailment.Block/neo.Network.payloads.Block/ailment.Block
+str/float/bool
+raiden.transfer.architecture.TransitionResult/compilers.Compiler/raiden.transfer.architecture.TransitionResult[raiden.transfer.mediated_transfer.state.InitiatorPaymentState]
+List[str]/AnyQt.QtCore.QRectF/Dict[int, AdjustedImage]
+int/str/List[grr_response_client.unprivileged.communication.FileDescriptor]
+int/float
+str/Dict[str, List[Any]]/grr_response_core.lib.rdfvalues.client.ClientInformation
+mypyc.ir.ops.Value/Type[List]/IO[bytes]
+electrum.transaction.PartialTransaction/electrum.transaction.Transaction/transaction.PartialTransaction
+int/float
+bool/str
+int
+List[str]/Dict[str, List[str]]/List[collections.OrderedDict[str, Any]]
+str
+int/model.InputData/str
+SshProcess/Dict[str, SweepInfo]/mypy.options.Options
+bokeh._testing.util.types.Capture/aioharmony.harmonyapi.HarmonyAPI/build.Build
+List[Dict]/list/BaseNode
+Optional[neo.Network.node.NeoNode]/Optional[List[FunctionSig]]/Optional[polyaxon.k8s.k8s_schemas.V1VolumeMount]
+raiden.utils.BlockHash/Sequence[str]/raiden.utils.BalanceHash
+str/argparse.Namespace/polyaxon.polyflow.V1Operation
+str/Optional[paasta_tools.utils.BranchDictV2]/zerver.data_import.sequencer.IdMapper
+Dict/Optional[_statement.Statement]/int
+compilers.Compiler/int/ast.AST
+int/float/bool
+ailment.Block/bytes/mypyc.ir.ops.BasicBlock
+str/Optional[Exception]/opentelemetry.sdk.trace.export.SpanExportResult
+Dict[str, paasta_tools.frameworks.task_store.MesosTaskParameters]/google.cloud.bigtable.row_data.PartialRowData/AnyQt.QtWidgets.QGraphicsLayoutItem
+bool
+bool/int/Optional[Callable[[tensorflow.data.Dataset, Optional[tensorflow.distribute.InputConstr]], tensorflow.data.Dataset]]
+bool/bool
+Dict[str, Any]/Set[int]/float
+denite.ui.default.Default/backend.backends.RegenInfo/qiskit.circuit.QuantumCircuit
+build.Build/IO[AnyStr]/gi.repository.Gtk.TreeView
+Dict[str, paasta_tools.frameworks.task_store.MesosTaskParameters]/paasta_tools.kubernetes_tools.KubeClient/sentry.integrations.slack.requests.base.SlackRequest
+bool/Union[bool, None]
+smarttub.Spa/gi.repository.Gtk.ComboBoxstr/backend.backends.RegenInfo
+Optional[Callable[[], Optional[transaction.Transaction]]]/int/Optional[bytes]
+plenum.common.messages.node_messages.Reply/AnyQt.QtWidgets.QGraphicsLayoutItem/PyQt5.QtWidgets.QListWidgetItem
+dict/int/core.types.ID
+list/BaseNode/List[dict]
+int/List[str]/bool
+pip._internal.req.req_install.InstallRequirement/invoices.OnchainInvoice/pipenv.patched.notpip._internal.req.req_install.InstallRequirement
+str/Optional[mypy.types.ProperType]/mypy.types.Type
+bytes/str/Dict[str, Any]
+str/str
+int/List[_devbuild.gen.syntax_asdl.word_t]/Mapping[sentry.types.integrations.ExternalProviders, Set[sentry.models.User]]
+qiskit.circuit.Int1/int/AnyStr
+int/optparse.Option/bool
+bytes/str/Dict[str, Any]
+bytes/str/raiden.utils.BalanceHash
+str/VersionTuple/tuple
+str/neo.Core.UInt160.UInt160/DsaKey
+str/str/List[str]
+Tuple[Crypto.PublicKey.ECC.EccKey, Crypto.PublicKey.ECC.EccKey]/Tuple[zerver.models.Huddle, zerver.models.Recipient]/Tuple[pegen.grammar.Grammar, pegen.parser.Parser, pegen.tokenizer.Tokenizer, pegen.parser_generator.ParserGenerator]
+str
+bytes/str/NumberOrArray
+int/List[arcade.SpriteList]/indicators.Ottava.Ottava
+int/str
+tensorflow.Tensor/int/SpeechIterable
+list/dict/int
+str/sqlalchemy.sql.ColumnElement[str]/bytes
+int/List[str]/numpy.ndarray
+int/mypy.nodes.NameExpr/mypy.nodes.IntExpr
+Iterator[bytes]/int/Iterator[Chunk]
+str/numpy.ndarray/Union[qiskit.opflow.TensoredOp, List[qiskit.opflow.TensoredOp]]
+bool/bool
+dict[str, Any]/str/zerver.lib.types.ProfileFieldData
+str/Optional[mypyc.ir.ops.Value]/series_options.str
+str
+str/Dict[str, Any]/bytes
+str
+ApiUploadYaraSignatureResult/str/int
+str/Dict[str, Any]/bytes
+str
+str/int/prop_value.PropValue
+str/Dict[str, Any]/bytes
+str
+ApiUploadYaraSignatureResult/int/str
+str/Dict[str, Any]/bytes
+str
+ApiUploadYaraSignatureResult/int/str
+str/Dict[str, Any]/bytes
+str
+ApiUploadYaraSignatureResult/str/int
+str/Dict[str, Any]/bytes
+str
+ApiUploadYaraSignatureResult/str/int

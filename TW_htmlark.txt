@@ -1,0 +1,16 @@
+TW
+none/Dict[str, Any]
+str/QUrl
+none/bytes
+str
+bytes/dict
+none/bytes
+str
+bool/context
+bool/str
+bool/str
+bool/str
+bool/str
+bool/list[str]
+none/str
+none/Namespace

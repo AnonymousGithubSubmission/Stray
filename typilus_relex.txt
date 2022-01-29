@@ -1,0 +1,51 @@
+typilus
+speechWithoutPauses.SpeechWithoutPauses/Set[int]/osh.cmd_eval.CommandEvaluator
+str
+series_options.Numeric/types.Numeric/int
+int/int/float
+bool
+int/mxnet.nd.NDArray/series_options.Numeric
+str
+str
+none
+dict/Sequence[int]/utils.CWLObjectType
+str/Iterable/Dict[mypy.nodes.Expression, mypy.types.Type]
+str/types.Optional[types.Pattern]/int
+bool/dict/List[zerver.models.UserProfile]
+mypyc.codegen.emit.Emitter/ecc.ECPrivkey/Set[int]
+Optional[mypyc.ir.func_ir.FuncIR]/tensorflow.Tensor/spinalcordtoolbox.image.Image
+str/sqlalchemy.sql.ColumnElement[bool]/Optional[rasa_nlu.model.Interpreter]
+float/bool/float
+int/options.series_options.Numeric
+none
+sublime.View/mypy.types.Type/List[gevent.Greenlet]
+mypyc.ir.class_ir.NonExtClassInfo/mypyc.ir.func_ir.FuncDecl/pedroai.result.Result[str, str]
+Callable[[Any], Any]/dict/qutebrowser.extensions.loader.InitHookType
+int/ParseFloat/numpy.ndarray
+str/denite.util.Candidates/sublime.View
+Tuple[int, str]/Tuple[List, int]/Tuple[numpy.datetime64, int]
+bool
+Dict[str, Any]/str/Optional[T]
+bool
+int/int/series_options.Numeric
+series_options.Numeric/float/int
+bool
+none
+int/list[str]/str
+List[str]/Set[str]/Optional[mypy.types.ProperType]
+str/int/BaseNode
+List[str]/Union[Iterable[str], Iterable[List[str]], Counter[str]]/IO[str]
+Generator[Dict[str, Any], Any, None]/Tuple[str, str]/Tuple[None, str]
+List[str]/asttokens.ASTTokens/raiden.utils.List[uuid.UUID]
+Tuple[Any, list]/raiden.utils.Tuple[raiden.utils.Dict[str, raiden.utils.Any], str]/Tuple[wx.Staticstr, wx.ColourPickerCtrl]
+str/mypy.nodes.CallExpr/mypy.nodes.AwaitExpr
+str/web3.Web3/int
+collections.deque/List[str]/Iterable[grr_response_core.lib.rdfvalues.paths.PathSpec]
+unittest.mock.Mock/int/IO[bytes]
+bool
+str
+str/raiden.utils.str/Optional[raiden.utils.TokenNetworkAddress]
+str/pathlib.Path/Union[str, pathlib.Path]
+Generator[None, None, bytes]/Iterator[str]/List[polyaxon.polyboard.logging.V1Log]
+Dict[str, Any]/Dict/dict
+Tuple[Pos, str]/Tuple[str, List[int], bool]/Tuple[Dict[str, pandas.DataFrame], freqtrade.configuration.TimeRange]

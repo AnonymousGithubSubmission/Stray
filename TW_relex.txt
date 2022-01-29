@@ -1,0 +1,51 @@
+TW
+Vocabulary/str
+TextFieldEmbedder/List[List[Token]]
+int/str
+float/int
+bool/str
+float/int
+str/bool
+str/Callable
+none
+Dict[str, torch.Tensor]/List[Dict[str, Any]]
+tensor/int
+tensor/int
+bool/str
+tensor/int
+tensor/str
+Dict[str, torch.Tensor]/Dict[str, Any]
+int/str
+float/int
+none
+tensor
+tensor
+none
+int/float
+float
+none/ndarray
+bool/float
+none/float/np.ndarray
+bool/str
+int
+bool/int
+bool/str
+none
+int/List[int]
+int/Location
+none/float
+List[Token]/Token
+ none/Dict[str, int]
+List[Token]/Token
+none/List[Tuple[str, str]]
+str/bool
+str/bool
+str/bool
+str/Point
+bool/Color
+str/Dict[str, str]
+ none/str
+str/Path
+none
+JsonDict/List[JsonDict]/Dict
+List[Instance]/none

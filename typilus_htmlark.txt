@@ -1,0 +1,16 @@
+typilus
+List[str]/mypy.nodes.TypeInfo/Dict[int, Optional[object]]
+str
+Tuple[str, Any]/tuple[set[str], set[str]]/tuple
+Optional[charset_normalizer.models.CharsetMatch]/str/str
+dict/bytes/numpy.ndarray
+str/django.http.HttpResponse/IO
+str/str
+argparse.ArgumentParser/Type[pegen.parser.Parser]/FragmentParser
+Callable[[bool, str, str], None]/Callable[[], None]/Callable[[pika.adapters.blocking_connection.BlockingChannel], None]
+bool/Optional[List[int]]/Callable[[str, str, str, str], Awaitable]
+bool/int
+bool/List[int]/List[Dict]
+bool
+list_ops.list_op.ListOp/float/qiskit.opflow.operator_base.OperatorBase
+SDType/Iterable[sentry.integrations.slack.message_builder.SlackBlock]/coredata.KeyedOptionDictType

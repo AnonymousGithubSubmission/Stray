@@ -1,0 +1,103 @@
+TW
+dict/str
+none
+dict/str
+str/dict
+none/BlockNumber
+none/str
+str/none
+none/Block
+none/Tuple[int, int]
+block/bool
+none/ndarray
+Block/bool
+bool/Address
+none
+Block/BlockSpecification
+Address/ChainState
+none/bytes
+none/MessageBuilder
+int/BlockNumber
+none/BlockNumber
+none/Iterator[str]
+bytes/int
+int/bytes
+int/bytes
+bool
+int/float
+none
+bytes/str
+int/str
+none
+str/Dict
+str/List[int]
+none/int
+Hash32/str
+none/bytes
+str/bytes
+str/bool
+none/bytes
+none/Dict
+Block/Dict[str, Any]
+none
+Callable/Dict[str, Any]
+Address/int
+int/bool
+bool/Callable
+none/List[Dict[str, Any]]
+Dict[str, Any]/int
+str/int
+Dict[str, Any]/TxReceipt
+none/bool
+str/Dict[str, Any]
+none/int
+Dict[str, Any]/str
+none/Iterator[str]
+str/int
+none/List[str]
+Request/HttpRequest
+none/Dict[str, Any]
+bytes/str
+int/List[Tuple[str, int]]
+none/list[str]
+int/str
+none/bytes/str
+bytes/Dict
+none/bytes
+bytes/str
+bytes/none
+str/Path
+none/bytes
+str/Union[str, bytes]
+none/bytes/Tuple[str, str]
+int/str
+int/List[int]
+int/str
+int/str
+none/bytes
+list/List
+int
+none/List[float]
+none/List[str]
+int/str
+none
+int/str
+none/bytes
+socket/bool
+int/str
+none
+socket/bool
+int/str
+none
+socket/bool
+int/str
+none
+socket/bool
+int/str
+none
+socket/bool
+int/str
+none
+socket/bool
+int/str
+none    
