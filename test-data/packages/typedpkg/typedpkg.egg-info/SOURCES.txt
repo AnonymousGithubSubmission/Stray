@@ -1,0 +1,11 @@
+setup.py
+typedpkg/__init__.py
+typedpkg/dne.py
+typedpkg/sample.py
+typedpkg.egg-info/PKG-INFO
+typedpkg.egg-info/SOURCES.txt
+typedpkg.egg-info/dependency_links.txt
+typedpkg.egg-info/not-zip-safe
+typedpkg.egg-info/top_level.txt
+typedpkg/pkg/__init__.py
+typedpkg/pkg/aaa.py

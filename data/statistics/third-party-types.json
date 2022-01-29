@@ -1,0 +1,5 @@
+{
+    "numpy":["ndarray"],
+    "torch":["Tensor"],
+    "socket":["socket"]
+}
