@@ -4,6 +4,7 @@ from collections import defaultdict
 from gc import collect
 import itertools
 import fnmatch
+import eventlet
 from contextlib import contextmanager
 import time
 from datetime import datetime
@@ -882,8 +883,15 @@ class TypeChecker(NodeVisitor[None], CheckerPluginInterface):
             self.message.clear()
             self.expr_checker.local_infer_map = {k:v for k,v in original_infer_map.items()}
             grounds = []
-        
+            start = time.time()
+            self.expr_checker.timeout = False
+            
             self.visit_func_def(node)
+            if self.expr_checker.timeout:
+                break
+            
+            # if time.time()-start >= 10:
+            #     break
             if self.defer_this_node:
                 break
             elif (len(self.added_attr) == 0 and len(self.message) == 0):
@@ -929,7 +937,13 @@ class TypeChecker(NodeVisitor[None], CheckerPluginInterface):
             self.expr_checker.local_infer_map = {k:v for k,v in original_infer_map.items()}
             func.type = None
             return False
-        
+        if self.expr_checker.timeout:
+            self.expr_checker.timeout = False
+            self.var_node = {k:v for k,v in original_var_node.items()}
+            self.type_map = {k:v for k,v in original_type_map.items()}
+            self.expr_checker.local_infer_map = {k:v for k,v in original_infer_map.items()}
+            func.type = base
+            return True
         for var in self.type_map:
             flag = 0
             for var2, typ in self.expr_checker.local_infer_map:

@@ -6,6 +6,7 @@ from mypy.backports import OrderedDict, nullcontext
 from contextlib import contextmanager
 import itertools
 import itertools
+import time
 from typing import (
     Any, cast, Dict, Set, List, Tuple, Callable, Union, Optional, Sequence, Iterator
 )
@@ -400,6 +401,7 @@ class ExpressionChecker(ExpressionVisitor[Type]):
 
 
     def add_incompatible(self, var1, typ1, var2, typ2):
+        start = time.time()
         if self.chk.is_checking:
             return
         id_pair1s = self.get_ground_id_pair(var1, typ1)
@@ -435,7 +437,7 @@ class ExpressionChecker(ExpressionVisitor[Type]):
                     #                 self.chk.global_incompatible[fix_pair] = set()
                     #             self.chk.global_incompatible[fix_pair].add(tuple(againist_pairs))
     
-    
+        # time.time()-start
     # only when all maybeT failed to retrieve 
     def add_single_attr(self, var1, typ1, attr):
         if self.chk.is_checking:
@@ -2345,6 +2347,7 @@ class ExpressionChecker(ExpressionVisitor[Type]):
                     reject = []
                 else:
                     reject = None
+                
                 check_arg(expanded_actual, actual_type, arg_kinds[actual],
                           callee.arg_types[i],
                           actual + 1, i + 1, callee, object_type, args[actual], context, messages, callable_name = callable_name, correct = correct, rejects = reject, method_node=method_node)
@@ -2436,7 +2439,7 @@ class ExpressionChecker(ExpressionVisitor[Type]):
             if object_type is None:
                 object_type = callee
             if isinstance(caller_type, MaybeTypes):
-                # a heristic for exact first match
+                start = time.time()
                 for item in caller_type.items:
                     res = is_subtype(item, callee_type)
                     rejected = context
@@ -2454,7 +2457,10 @@ class ExpressionChecker(ExpressionVisitor[Type]):
                             correct.append((context, item, 1))
                         else:
                             correct.append((context, item, 0.5))
-
+                    if time.time()-start >= 2:
+                        # pass
+                        self.timeout = True
+                        break
             
             
             else:
@@ -3643,6 +3649,7 @@ class ExpressionChecker(ExpressionVisitor[Type]):
                     has_method = True
             if not has_method:
                 self.add_single_attr(object_node, base_type, method)
+            start = time.time()
             for base_type in base_types: 
                 assert not isinstance(base_type, MaybeTypes)
                 if method == '__getitem__' and isinstance(context, IndexExpr) and isinstance(base_type, TupleType) and self.try_getting_int_literals(context.index) is not None:
@@ -3677,6 +3684,9 @@ class ExpressionChecker(ExpressionVisitor[Type]):
                     corrects = []
 
                     ret_type, _ = self.check_method_call(method, base_type, callee_type, args, arg_kinds, context, local_errors, corrects = corrects, method_node = method_node)
+                    if time.time()-start >= 5:
+                        self.timeout = True
+                        break
                     # this will not work for any type 
                     if len(corrects) > 0 and len(corrects[0]) > 0 and (len(corrects[0]) == 1 or isinstance(corrects[0][1], Tuple)):
                         
@@ -5433,6 +5443,8 @@ class ExpressionChecker(ExpressionVisitor[Type]):
         is True and this expression is a call, allow it to return None.  This
         applies only to this expression and not any subexpressions.
         """
+        if hasattr(self, 'timeout') and self.timeout:
+            return AnyType(0)
         if node in self.type_overrides:
             return self.type_overrides[node]
         self.type_context.append(type_context)
