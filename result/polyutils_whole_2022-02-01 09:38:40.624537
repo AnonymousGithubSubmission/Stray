@@ -1,0 +1,18 @@
+trimseq
+def (seq: builtins.object)
+
+as_series
+def (alist: builtins.object, trim: builtins.object =)
+
+trimcoef
+def (c: builtins.object, tol: builtins.object =)
+
+getdomain
+def (x: builtins.object)
+
+mapparms
+def (old: builtins.object, new: builtins.object)
+
+mapdomain
+def (x: builtins.object, old: builtins.object, new: builtins.object)
+

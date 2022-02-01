@@ -25,7 +25,6 @@ from mypy.errorcodes import error_codes
 from mypy.options import Options, BuildType
 from mypy.config_parser import get_config_module_names, parse_version, parse_config_file
 from mypy.split_namespace import SplitNamespace
-from mypy.test_main import test_main
 from mypy.version import __version__
 import pickle
 orig_stat: Final = os.stat
@@ -68,8 +67,6 @@ def main(script_path: Optional[str],
     fscache = FileSystemCache()
     sources, options = process_options(args, stdout=stdout, stderr=stderr,
                                        fscache=fscache)
-    with open('/home/sunke/option', 'wb') as f:
-        pickle.dump(options, f)
     formatter = util.FancyFormatter(stdout, stderr, options.show_error_codes)
 
     if options.install_types and (stdout is not sys.stdout or stderr is not sys.stderr):

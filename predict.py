@@ -14,7 +14,6 @@ from mypy.nodes import (
 )
 from typing import get_type_hints, Union
 from collections.abc import Callable
-import matplotlib.pyplot as plt
 from mypy.traverser import TraverserVisitor
 from mypy.types import (
     Type, AnyType, CallableType, FunctionLike, Overloaded, TupleType, TypedDictType,
@@ -29,7 +28,6 @@ import argparse
 from mypy.remover import TypeHintRemover
 from mypy.stubgen import main_args
 import ast
-import astunparse
 from mypy.build import process_graph
 # a:Union[int,str,bool]
 # def f(x):
@@ -40,27 +38,9 @@ from mypy.build import process_graph
 # main_args(sys.argv[:2])
 mutable_funcs = []
 args = sys.argv[1:]
-
-main_name = args[1]
-if args[1] == 'None':
-    main_name = None
-save_name = args[2]
+print(args)
 args = args[0:1]
-if os.path.exists('save_' + save_name):
-    with open('save_' + save_name,'rb') as f:
-        target_suggest = pickle.load(f)
-    with open('save_txt_' + save_name,'w+') as f:
-        for funcs, suggests in target_suggest:
-            for func, suggest in zip(funcs, suggests):
-                f.write(func+'\n')
-                if 'out' in suggest:
-                    f.write(suggest['out'])
-                else:
-                    f.write('<error>\n')
 
-with open('/home/sunke/option', 'rb') as f:
-    options = pickle.load(f)
-print(options)
 
 def build_cache(options):
     options.check_untyped_defs = True

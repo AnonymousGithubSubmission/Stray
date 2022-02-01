@@ -78,10 +78,6 @@ class FineGrainedSuite(DataSuite):
             return
 
         main_src = '\n'.join(testcase.input)
-        with open('/home/sunke/output.txt','wb') as f:
-            pickle.dump(main_src, f)
-        with open('/home/sunke/tmpdir/' + testcase.tmpdir.name,'w+') as f:
-            f.write(main_src+'\n')
         main_path = os.path.join(test_temp_dir, 'main')
         with open(main_path, 'w', encoding='utf8') as f:
             f.write(main_src)
@@ -89,8 +85,6 @@ class FineGrainedSuite(DataSuite):
         options = self.get_options(main_src, testcase, build_cache=False)
         
         build_options = self.get_options(main_src, testcase, build_cache=True)
-        with open("/home/sunke/bpickle.pl",'wb') as f:
-            pickle.dump(build_options, f)
         server = Server(options, DEFAULT_STATUS_FILE)
 
         num_regular_incremental_steps = self.get_build_steps(main_src)
@@ -106,8 +100,6 @@ class FineGrainedSuite(DataSuite):
             a.extend(normalize_messages(messages))
 
         assert testcase.tmpdir
-        with open('/home/sunke/tmpname.txt','wb') as f:
-            pickle.dump(testcase.tmpdir.name, f)
         a.extend(self.maybe_suggest(step, server, main_src, testcase.tmpdir.name))
 
         if server.fine_grained_manager:
