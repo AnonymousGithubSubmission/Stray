@@ -38,8 +38,9 @@ from mypy.build import process_graph
 # main_args(sys.argv[:2])
 mutable_funcs = []
 args = sys.argv[1:]
-print(args)
+mode = args[1]
 args = args[0:1]
+print(args)
 
 
 def build_cache(options):
@@ -94,6 +95,7 @@ def clear_cache(module):
     
 sources, options = process_options(args, stdout=sys.stdout, stderr=sys.stderr,
                                     fscache=fscache)
+options.mode = mode
 for source in sources:
     # clear_annotation(source.path)
     clear_cache(source.module)

@@ -3609,51 +3609,53 @@ def process_stale_scc(graph: Graph, scc: List[str], manager: BuildManager) -> No
 
     Exception: If quick_and_dirty is set, use the cache for fresh modules.
     """
-    process_project(graph, scc, manager)
-    return
-    stale = scc
-    for id in stale:
-        # We may already have parsed the module, or not.
-        # If the former, parse_file() is a no-op.
-        graph[id].parse_file()
-    if 'typing' in scc:
-        # For historical reasons we need to manually add typing aliases
-        # for built-in generic collections, see docstring of
-        # SemanticAnalyzerPass2.add_builtin_aliases for details.
-        typing_mod = graph['typing'].tree
-        assert typing_mod, "The typing module was not parsed"
-    mypy.semanal_main.semantic_analysis_for_scc(graph, scc, manager.errors)
-        
-    # calculate function
-
-    # validate begins
-    unfinished_modules = set(stale)
-    for id in stale:
-        graph[id].type_check_first_pass()
-        if not graph[id].type_checker().deferred_nodes:
-            unfinished_modules.discard(id)
-            graph[id].finish_passes()
-
-    # score = 1
-    # if score == 0:
-    #     break
-    while unfinished_modules:
+    if manager.options.mode == 'predict':
+        process_project(graph, scc, manager)
+        return
+    else:
+        stale = scc
         for id in stale:
-            if id not in unfinished_modules:
-                continue
-            if not graph[id].type_check_second_pass():
-                # 这次没有未完成的了，即使有依赖，也是能够这样解决的
+            # We may already have parsed the module, or not.
+            # If the former, parse_file() is a no-op.
+            graph[id].parse_file()
+        if 'typing' in scc:
+            # For historical reasons we need to manually add typing aliases
+            # for built-in generic collections, see docstring of
+            # SemanticAnalyzerPass2.add_builtin_aliases for details.
+            typing_mod = graph['typing'].tree
+            assert typing_mod, "The typing module was not parsed"
+        mypy.semanal_main.semantic_analysis_for_scc(graph, scc, manager.errors)
+            
+        # calculate function
+
+        # validate begins
+        unfinished_modules = set(stale)
+        for id in stale:
+            graph[id].type_check_first_pass()
+            if not graph[id].type_checker().deferred_nodes:
                 unfinished_modules.discard(id)
                 graph[id].finish_passes()
-    for id in stale:
-        graph[id].generate_unused_ignore_notes()
-    if any(manager.errors.is_errors_for_file(graph[id].xpath) for id in stale):
+
+        # score = 1
+        # if score == 0:
+        #     break
+        while unfinished_modules:
+            for id in stale:
+                if id not in unfinished_modules:
+                    continue
+                if not graph[id].type_check_second_pass():
+                    # 这次没有未完成的了，即使有依赖，也是能够这样解决的
+                    unfinished_modules.discard(id)
+                    graph[id].finish_passes()
         for id in stale:
-            graph[id].transitive_error = True
-    for id in stale:
-        manager.flush_errors(manager.errors.file_messages(graph[id].xpath), False)
-        graph[id].write_cache()
-        graph[id].mark_as_rechecked()
+            graph[id].generate_unused_ignore_notes()
+        if any(manager.errors.is_errors_for_file(graph[id].xpath) for id in stale):
+            for id in stale:
+                graph[id].transitive_error = True
+        for id in stale:
+            manager.flush_errors(manager.errors.file_messages(graph[id].xpath), False)
+            graph[id].write_cache()
+            graph[id].mark_as_rechecked()
 
 
 def sorted_components(graph: Graph,

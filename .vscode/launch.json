@@ -11,7 +11,7 @@
             "console": "integratedTerminal",
             "module": "predict",
             //"args": ["data/benchmark/seagull.py"],
-            "args": ["data/benchmark/relex.py"],
+            "args": ["data/benchmark/relex.py", "predict"],
             //"args": ["data/benchmark/htmlark.py"],
             //"args": ["data/benchmark/tinychain.py"],
             "justMyCode": false
