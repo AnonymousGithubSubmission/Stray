@@ -1,5 +1,10 @@
-## ExTyper: Towards Robust and Correct Type Prediction
 
+
+
+
+## ExTyper: Towards Robust and Correct Type Prediction
+### Update from 2022.2.23
+* Authors forgot to put the examples mentioned in the submited paper to this package until 2022.2.23 and made an update to fix this. After then, the examples reside in the example folder.   
 
 ### Installation
 ExTyper is built upon [mypy](https://github.com/python/mypy), to run ExTyper, those packages are required. 
