@@ -89,14 +89,22 @@ def make_data_uri(mimetype, data):
     Returns:
         str: Input data encoded into a data URI.
     """
-    mimetype = '' if mimetype is None else mimetype
-    if mimetype in ['', 'text/css', 'application/javascript']:
+    if mimetype is None:
+        mimetype1 = ''
+    else:
+        mimetype1 = mimetype
+    # mimetype = '' if mimetype is None else mimetype
+    # encoded_data = data.decode()
+    # encoded_data = quote(data.decode())
+    # return "data:{},{}".format(mimetype1)
+    if mimetype1 in ['', 'text/css', 'application/javascript']:
         # Text data can simply be URL-encoded
         encoded_data = quote(data.decode())
+        mimetype2 = mimetype1
     else:
-        mimetype = mimetype + ';base64'
+        mimetype2 = mimetype1 + ';base64'
         encoded_data = base64.b64encode(data).decode()
-    return "data:{},{}".format(mimetype, encoded_data)
+    return "data:{},{}".format(mimetype2, encoded_data)
 
 # str, str, callable, bool, bool, bool, bool -> str
 def convert_page(page_path, parser,
@@ -108,16 +116,16 @@ def convert_page(page_path, parser,
         callback('INFO', 'feature', "Requests not available, web downloading disabled")
 
     # Get page HTML, whether from a server, a local file, or stdin
-    if page_path is None:
-        # Encoding is unknown, read as bytes (let bs4 handle decoding)
-        page_text = sys.stdin.buffer.read()
-    else:
-        _, page_text = _get_resource(page_path)
-
+    # if page_path is None:
+    #     # Encoding is unknown, read as bytes (let bs4 handle decoding)
+    #     page_text = sys.stdin.buffer.read()
+    # else:
+    #     _, page_text = _get_resource(page_path)
+    _, page_text = _get_resource(page_path)
     # Not all parsers are equal - it can be specified on the command line
     # so the user can try another when one fails
-    if parser == 'auto':
-        parser = get_available_parsers()[0]
+    # if parser == 'auto':
+    #     parser = get_available_parsers()[0]
     soup = bs4.BeautifulSoup(page_text, parser)
     callback('INFO', 'parser', "Using parser " + parser)
 
@@ -137,10 +145,12 @@ def convert_page(page_path, parser,
             if 'src' in script.attrs:
                 tags.append(script)
 
-    # Convert the linked resources
-    fullpath = ''
+    # # Convert the linked resources
+    # fullpath = ''
     for tag in tags:
         tag_url = tag['href'] if tag.name == 'link' else tag['src']
+        fullpath = urljoin(page_path, tag_url)
+        tag_mime, tag_data = _get_resource(fullpath)
         try:
             # BUG: doesn't work if using relative remote URLs in a local file
             fullpath = urljoin(page_path, tag_url)
@@ -230,77 +240,77 @@ def _get_options():
     return parsed
 
 
-def _main():
-    """Main function when called as a script."""
-    options = _get_options()
+# def _main():
+#     """Main function when called as a script."""
+#     options = _get_options()
 
-    # All further messages should use print_verbose() or print_error()
-    def print_error(m):
-        print(m, file=sys.stderr)
-    # print_error = lambda m: print(m, file=sys.stderr)
-    if options.verbose:
-        print_verbose = print_error
-    else:
-        def print_verbose(_):
-            pass
+#     # All further messages should use print_verbose() or print_error()
+#     def print_error(m):
+#         print(m, file=sys.stderr)
+#     # print_error = lambda m: print(m, file=sys.stderr)
+#     if options.verbose:
+#         print_verbose = print_error
+#     else:
+#         def print_verbose(_):
+#             pass
 
-    def info_callback(severity, message_type, message_data):
-        """Display progress information during conversion."""
-        if message_type == 'img':
-            tagtype = "Image"
-        elif message_type == 'link':
-            tagtype = "CSS"
-        elif message_type == 'script':
-            tagtype = "JS"
-        else:
-            tagtype = message_type
-        # Only display info messages if -v/--verbose flag is set
-        if severity == 'INFO':
-            if options.verbose:
-                print_verbose("{}: {}".format(tagtype, message_data))
-        elif severity == 'ERROR':
-            print_error("{}: {}".format(tagtype, message_data))
-        else:
-            print_error("Unknown message level {}, please tell the author of the program".format(severity))
-            print_error("{}: {}".format(tagtype, message_data))
+#     def info_callback(severity, message_type, message_data):
+#         """Display progress information during conversion."""
+#         if message_type == 'img':
+#             tagtype = "Image"
+#         elif message_type == 'link':
+#             tagtype = "CSS"
+#         elif message_type == 'script':
+#             tagtype = "JS"
+#         else:
+#             tagtype = message_type
+#         # Only display info messages if -v/--verbose flag is set
+#         if severity == 'INFO':
+#             if options.verbose:
+#                 print_verbose("{}: {}".format(tagtype, message_data))
+#         elif severity == 'ERROR':
+#             print_error("{}: {}".format(tagtype, message_data))
+#         else:
+#             print_error("Unknown message level {}, please tell the author of the program".format(severity))
+#             print_error("{}: {}".format(tagtype, message_data))
 
-    # Convert page
-    if options.webpage is None:
-        print_verbose("Reading from STDIN")
-    else:
-        print_verbose("Processing {}".format(options.webpage))
+#     # Convert page
+#     if options.webpage is None:
+#         print_verbose("Reading from STDIN")
+#     else:
+#         print_verbose("Processing {}".format(options.webpage))
 
-    try:
-        newhtml = convert_page(options.webpage,
-                               parser=options.parser,
-                               ignore_errors=options.ignore_errors,
-                               ignore_images=options.ignore_images,
-                               ignore_css=options.ignore_css,
-                               ignore_js=options.ignore_js,
-                               callback=info_callback)
-    except (OSError, RequestException, ValueError) as e:
-        sys.exit("Unable to convert webpage: {}".format(e))
-    except NameError:
-        raise
-        sys.exit("Cannot download web resource: Need Requests installed")
+#     try:
+#         newhtml = convert_page(options.webpage,
+#                                parser=options.parser,
+#                                ignore_errors=options.ignore_errors,
+#                                ignore_images=options.ignore_images,
+#                                ignore_css=options.ignore_css,
+#                                ignore_js=options.ignore_js,
+#                                callback=info_callback)
+#     except (OSError, RequestException, ValueError) as e:
+#         sys.exit("Unable to convert webpage: {}".format(e))
+#     except NameError:
+#         raise
+#         sys.exit("Cannot download web resource: Need Requests installed")
 
-    # Write output
-    try:
-        options.output.write(newhtml)
-    except OSError as e:
-        # Note that argparse handles errors opening the file handle
-        sys.exit("Unable to write to output file: {}".format(e.strerror))
+#     # Write output
+#     try:
+#         options.output.write(newhtml)
+#     except OSError as e:
+#         # Note that argparse handles errors opening the file handle
+#         sys.exit("Unable to write to output file: {}".format(e.strerror))
 
-    print_verbose("All done, output written to " + options.output.name)
-
-
-def _main_wrapper():
-    """Used as an entry point for pip's automatic script creation."""
-    try:
-        _main()
-    except KeyboardInterrupt:
-        sys.exit("\nCancelling webpage conversion")
+#     print_verbose("All done, output written to " + options.output.name)
 
 
-if __name__ == "__main__":
-    _main_wrapper()
+# def _main_wrapper():
+#     """Used as an entry point for pip's automatic script creation."""
+#     try:
+#         _main()
+#     except KeyboardInterrupt:
+#         sys.exit("\nCancelling webpage conversion")
+
+
+# if __name__ == "__main__":
+#     _main_wrapper()

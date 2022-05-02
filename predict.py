@@ -1,12 +1,12 @@
 import pickle
-from mypy.main import process_options
+from extyper.main import process_options
 import sys
-from mypy import build
-from mypy.fscache import FileSystemCache
-from mypy.dmypy_server import Server
-from mypy.dmypy_util import DEFAULT_STATUS_FILE
-from mypy.build import sorted_components
-from mypy.nodes import (
+from extyper import build
+from extyper.fscache import FileSystemCache
+from extyper.dmypy_server import Server
+from extyper.dmypy_util import DEFAULT_STATUS_FILE
+from extyper.build import sorted_components
+from extyper.nodes import (
     ArgKind, ARG_STAR, ARG_STAR2, FuncDef, MypyFile, SymbolTable,
     Decorator, RefExpr,
     SymbolNode, TypeInfo, Expression, ReturnStmt, CallExpr,
@@ -14,21 +14,21 @@ from mypy.nodes import (
 )
 from typing import get_type_hints, Union
 from collections.abc import Callable
-from mypy.traverser import TraverserVisitor
-from mypy.types import (
+from extyper.traverser import TraverserVisitor
+from extyper.types import (
     Type, AnyType, CallableType, FunctionLike, Overloaded, TupleType, TypedDictType,
     Instance, NoneType, strip_type, TypeType, TypeOfAny,
     UnionType, TypeVarId, TypeVarType, PartialType, DeletedType, UninhabitedType,
     is_named_instance, union_items, TypeQuery, LiteralType,
     is_optional, remove_optional, TypeTranslator, StarType, get_proper_type, ProperType,
     get_proper_types, is_literal_type, TypeAliasType, TypeGuardedType)  
-import mypy
+import extyper
 import os
 import argparse
-from mypy.remover import TypeHintRemover
-from mypy.stubgen import main_args
+from extyper.remover import TypeHintRemover
+from extyper.stubgen import main_args
 import ast
-from mypy.build import process_graph
+from extyper.build import process_graph
 # a:Union[int,str,bool]
 # def f(x):
 #     x()

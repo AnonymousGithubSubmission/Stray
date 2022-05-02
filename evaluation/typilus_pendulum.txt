@@ -1,0 +1,1124 @@
+Typilus
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+int
+bool/str
+str/bool/Optional[Union[bool, str]]
+\
+int/Tuple[float, float]
+str/int/Optional[str]
+bool
+datetime.datetime.timedelta/datetime.timedelta/messages.FederationProviderConfigurationResponse
+\
+Dict[str, bool]/str/void
+Dict[str, str]/Type[superset.db_engine_specs.base.BaseEngineSpec]/Union[polyaxon.polyflow.V1Operation, polyaxon.polyflow.V1CompiledOperation]
+int/Dict[str, bool]/str
+Dict[str, str]/Type[superset.db_engine_specs.base.BaseEngineSpec]/Union[polyaxon.polyflow.V1Operation, polyaxon.polyflow.V1CompiledOperation]
+bool/Union[bool, None]/Dict[str, Any]
+str/Union[bytes, str]
+bool/confluent_kafka.TopicPartition/Optional[str]
+str
+bool/Optional[str]/str
+
+
+int/Tuple[float, float]
+bool/str/Dict[str, Any]
+bool/str/int
+str/bool/Optional[AnyStr]
+
+
+
+bool/polyaxon.polyboard.events.V1EventChart/str
+bool/str/Dict[str, Any]
+bool/str/float
+str/bool/Optional[AnyStr]
+
+
+
+bool/str/polyaxon.polyboard.events.V1EventChart
+bool/str/Dict[str, Any]
+bool/str/int
+str/bool/Optional[AnyStr]
+
+
+
+
+
+float/Callable[[List[Dict[str, Any]]], None]/str
+int/UpdateId
+str/int/bool
+int/Dict[int, int]/datetime.timedelta
+
+
+
+
+
+
+
+
+
+Set[str]/bool/int
+bool/git.TagReference/Optional[int]
+bool/str/Callable
+datetime.timedelta/plenum.common.event_bus.ExternalBus.Destination/confluent_kafka.TopicPartition
+datetime.datetime.timedelta/Iterator[Dict[str, str]]/bytes
+azure.purview.catalog.core.rest.HttpRequest/bool/pandas.DataFrame
+
+
+
+
+
+Tuple[Any, Any]/bytes/Optional[bytes]
+str/CacheKey/K
+str/Optional[str]/Optional[int]
+Dict[int, plenum.server.catchup.utils.CatchupTill]/int/numpy.ndarray
+str/bytes/api.KeyType
+str/Tuple[bool, List[str]]/Tuple[zerver.data_import.import_util.ZerverFieldsT, List[zerver.data_import.import_util.ZerverFieldsT], Dict[str, int], Dict[str, int]]
+int/str/azure.purview.catalog.core.rest.HttpRequest
+bool/int/snapcraft.internal.steps.Step
+int/str/azure.purview.catalog.core.rest.HttpRequest
+str/int/Optional[str]
+int/str/raiden.utils.BlockNumber
+Dict[str, int]/Dict[int, plenum.server.catchup.utils.CatchupTill]/bytes
+str/bytes
+str/List[ApiManagementSku]/List[AppServiceEnvironmentResource]
+
+
+bool
+int/Dict[str, int]/qiskit.opflow.operator_base.OperatorBase
+Union[str, Iterable[str]]/bool/synapse.types.StateMap[str]
+List[int]/str/Optional[List[IpsecPolicy]]
+dict/bool/mypyc.ir.func_ir.FuncIR
+bool/tl.types.Message/Dict[str, str]
+List[qiskit.visualization.pulse_v2.drawings.strData]/str/int
+ContentLink/bool/Tuple[str, str, document.Document]
+str/datetime.datetime/float
+datetime.datetime/mypy.plugin.DynamicClassDefConstr/numpy.datetime64
+bool/List[docs.exts.docs_build.errors.DocBuildError]
+Dict[float, str]/Dict[str, int]/Dict[str, str]
+str/bool/BusCallback
+BinaryAllowedPredicate/bool/raiden.utils.NoReturn
+str/Dict[str, float]/Tuple[float, float, float]
+str/float/Dict[str, Any]
+int/bool/Dict[str, Dict[str, Any]]
+str/float/bool
+str/tensorflow.Tensor/Result
+str/Dict[str, object]/dict
+int/web3.types.BlockData/dict
+
+
+
+
+str/Optional[str]/types.Optional[str]
+freqtrade.plugins.protections.ProtectionReturn/int/numpy.ndarray
+str/datetime.datetime/bytes
+datetime.datetime/List[str]/Optional[str]
+int/Dict/Optional[str]
+int/str/LockFile
+List[str]/str/bool
+bool
+str/mypy.nodes.Var/logging.Logger
+bool
+str/mypy.nodes.Var/logging.Logger
+datetime.datetime.timedelta/datetime.timedelta/messages.FederationProviderConfigurationResponse
+\
+\
+\
+
+
+
+str/float/Optional[zerver.tornado.event_queue.ClientDescriptor]
+bool/synapse.types.StateMap[str]/Optional[pip._internal.vcs.versioncontrol.AuthInfo]
+str/object/list
+str/Dict[str, List[str]]/dict
+Optional[list]/int/Dict[str, str]
+str/collections.OrderedDict/List[str]
+bool/mypyc.ir.ops.BasicBlock/mypy.nodes.TryStmt
+bool/Dict[str, List[str]]/str
+List[Union[str, DayOfWeek]]/int
+str/List[Dict[str, Any]]/Union[django.http.FileResponse, django.http.Http404, django.http.HttpResponse, django.http.HttpResponseNotModified]
+bool/List[Tuple[Any, Any]]/List[Tuple[str, int]]
+str/List[int]/int
+float/bool/rest_framework.response.Response
+List[float]/float/str
+bool/Dict/collections.OrderedDict
+set/Mapping[V, K]/Union[rrule, rruleset]
+bool/str/Optional[util.DeclClassApplied]
+bool/asyncio.AbstractEventLoop/int
+bool/List[docs.exts.docs_build.errors.DocBuildError]/Tuple[List, int]
+bool/int/List[str]
+int
+List[int]/bytes/str
+bool/float/object
+str/Tuple[Pos, str]/Optional[mypy.nodes.Block]
+
+
+
+
+
+
+str/Tuple[Pos, Key, Any]/mypy.nodes.SetComprehension
+
+
+
+
+
+
+
+
+
+
+str/List[str]/Tuple[str, int, int]
+int/Optional[str]/rasa.model.FingerprintComparisonResult
+bool
+Optional[bool]
+Optional[Union[str, models.Locale]]/str/Union[List[str], None, int]
+str/bytes/string
+models.ConfigServerSettings/str/Dict[str, Any]
+bool/Optional[bool]/int
+Optional[str]/bool
+Optional[Union[str, models.Locale]]/Optional[Union[str, _models.Locale]]
+core_ci.AnsibleCoreCI/bytes/pandas._DtypeObj
+SwigPyIterator/LinOp/DoubleVector
+list/List[Constraint]/tuple[str, Any]
+str/bool/homeassistant.helpers.update_coordinator.DataUpdateCoordinator[ambee.AirQuality]
+List[str]/Iterator[Tuple[tests.ptutils.testmodel.SampleDatapoint, bool]]/int
+bool/mypy.types.Type/float
+str/Tuple[Optional[Union[str, _T0]], Optional[Union[str, _T1]]]/List[alerta.models.enums.Scope]
+str
+str/bool/grr_response_core.lib.rdfvalues.paths.PathSpec.PathType
+str
+Dict/list[dict]/str
+str/polyaxon.k8s.k8s_schemas.V1VolumeMount/Optional[int]
+str/Optional[Iterable[Dict[str, Any]]]/int
+str/int/Tuple[str, str, Optional[str]]
+str/Optional[Iterable[Dict[str, Any]]]/int
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+str/collections.OrderedDict/List[str]
+bool/mypy.nodes.TryStmt/raiden.network.rpc.client.TransactionMined
+argparse.Namespace/bool/Dict[str, List[str]]
+List[Union[str, DayOfWeek]]/int
+str/int/Tuple[Command, Command]
+bool/int/List[Tuple[Any, Any]]
+List[int]/str/Union[channel.Channel, middleware.Middleware]
+gevent.Greenlet/Optional[Tuple[int, int]]/int
+Optional[Tuple[int, int]]/int
+bool/Optional[float]/Optional[str]
+bool/mypyc.ir.ops.BasicBlock/mypyc.ir.ops.Value
+bool/Optional[util.DeclClassApplied]/str
+List[str]/typing_extensions.Final/str
+Final/Dict[uamqp.types.AMQPType, uamqp.types.AMQPType]/int
+bool/List[str]/asyncio.AbstractEventLoop
+int/bool/JSResult
+str/List[str]/numpy.ndarray
+Union[str, UsageUnit]/str
+Optional[str]/Optional[int]/str
+str/Callable/Dict[Tuple[int, str, str], int]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Dict/bool/mcheck.metadata.irods_metadata.file_metadata.IrodsSeqFileMetadata
+str/int/Optional[datetime.datetime]
+bool/List[Dict[str, Any]]/zerver.data_import.import_util.ZerverFieldsT
+str/float/List[str]
+int/Tuple[float, float]/Union[float, List[float]]
+bool/Dict[str, Any]/Optional[int]
+bool/str/spinalcordtoolbox.image.Image
+str/List[changes.constants.Status]/bool
+int/str/mypy.nodes.ForStmt
+bool
+bool
+bool
+int/bsblan.Info/Tuple[str, int, Optional[str]]
+str/datetime.date/items.Date
+str/Tuple[float, float, float]/items.Time
+str/datetime.datetime/List[Dict[str, Any]]
+bool/Union[bool, Awaitable[bool]]/str
+int/Optional[str]/str
+polyaxon.auxiliaries.V1PolyaxonInitContainer/spinalcordtoolbox.image.Image/sentry.models.Organization
+datetime.date/Shape/Union[str, Iterable[str]]
+str/Optional[str]/types.Optional[str]
+str/tensorflow.distribute.Strategy/Writable
+Optional[float]/Optional[bool]/bool
+bool/int/Optional[float]
+Optional[bytearray]/Optional[str]/int
+Mapping[str, Sequence[str]]/str/List[Dict[str, Any]]
+List[bool]/azure.mgmt.servicefabricmanagedclusters.models.NodeType/str
+bool/Set[Tuple[str, str]]/Set[str]
+absl.flags.FlagValues/UJSONResponse/List[util.RenderItem]
+Dict[str, Any]/bool/datetime.time
+int/str/datetime.datetime
+dict[str, Any]/azure.purview.catalog.core.rest.HttpRequest/Dict[str, Any]
+str/int/Tuple[kubernetes.client.models.V1Volume, kubernetes.client.models.V1VolumeMount]
+str/Tuple[str, version.Version]/Dict[int, Dict[str, str]]
+str/Dict[str, Any]/Dict[str, str]
+str/mypy.types.Type/List[list]
+str/Dict[str, tensorflow.Tensor]/List[str]
+str/bytes/Union[datetime.datetime, datetime.date, datetime.time]
+str/bytes/Union[datetime.datetime, datetime.date, datetime.time]
+str/bytes/Union[datetime.datetime, datetime.date, datetime.time]
+str/bytes/Union[datetime.datetime, datetime.date, datetime.time]
+str/mypy.types.Type/Union[str, _T0]
+str/mypy.types.ProperType/mypy.nodes.DelStmt
+str/int/raiden.utils.Optional[str]
+str/Union[str, bool]/Dict[str, Any]
+Optional[str]/Optional[Union[str, models.Locale]]/str
+
+
+float/str/mypy.options.Options
+str/tuple/Final
+core.util._DebugFile/tuple/float
+datetime.datetime/list/List
+List[str]/List[int]/List[complex]
+str/tuple/Final
+core.util._DebugFile/tuple/float
+datetime.datetime/str/list
+bool/Tuple[bool, Optional[str]]
+bool
+bool/mypyc.ir.ops.Value
+bool
+datetime.date/List[str]/datetime.datetime
+bool
+Optional[int]/Optional[object]/azure.mgmt.cdn.models.QueryStringCachingBehavior
+int/ControlledGate/synapse.types.RoomAlias
+models.SparkBatchJobOptions/str/zerver.models.UserProfile
+Dict[str, Any]/Optional[freqtrade.persistence.LocalTrade]/str
+models.SparkBatchJobOptions/str/zerver.models.UserProfile
+Tuple[Pos, str]/List[Hunk]/Iterator[str]
+Optional[bool]/Optional[Union[str, models.AlertState]]/django.contrib.auth.tokens.PasswordResetTokenGenerator
+List[str]/Optional[List[TrackDescriptor]]/str
+str/Dict/pipeline.StepType
+Optional[str]/Optional[List[str]]/Optional[models.MarketplaceProductLogUpdate]
+Optional[str]/bool
+Optional[Union[str, models.Locale]]/Optional[Union[str, _models.Locale]]
+str/azure.purview.catalog.core.rest.HttpRequest/int
+azure.purview.catalog.core.rest.HttpRequest/str/Dict[int, Dict[str, str]]
+tornado.concurrent.Future/int/azure.purview.catalog.core.rest.HttpRequest
+bool/int/Tuple[Optional[float], Optional[int]]
+str/azure.purview.catalog.core.rest.HttpRequest/Optional[str]
+VulnData/str/Tuple[Optional[float], Optional[int]]
+bool/datetime.datetime
+bool/azure.messaging.webpubsubservice.core.rest.HttpRequest/datetime.datetime
+tornado.concurrent.Future/Set[str]/bool
+str/Tuple[Optional[float], Optional[int]]/list
+str/Optional[int]/Optional[str]
+VulnData/str/Set[Tuple[str, str]]
+mypy.types.CallableType/set/mypy.nodes.TypeInfo
+VulnData/Tuple[bool, Optional[str], bool]/azure.purview.catalog.core.rest.HttpRequest
+mypy.types.CallableType/set/Iterable[List[str]]
+VulnData/Tuple[bool, Optional[str], bool]/azure.purview.catalog.core.rest.HttpRequest
+str/Tuple[List[str], int]/Tuple[List[str], List[str]]
+VulnData/azure.purview.catalog.core.rest.HttpRequest/Set[Tuple[str, str]]
+bool/tokeniser.Token/Tuple[_devbuild.gen.id_kind_asdl.Id_t, str]
+Optional[TrafficAnalyticsProperties]/Optional[tensorflow.Variable]/Optional[List[str]]
+Optional[datetime.datetime]/bool/Optional[int]
+str/int/LockFile
+Optional[TrafficAnalyticsProperties]/Optional[tensorflow.Variable]/Optional[List[str]]
+Optional[datetime.datetime]/bool/Optional[int]
+bool/datetime.datetime/str
+int/str/float
+str/Generator/UserConstr
+bool/Optional[int]/Optional[bool]
+set/homeassistant.config_entries.ConfigEntry/dict[str, Any]
+str/int/Optional[ibis.expr.TimeConstr]
+str/List[zerver.models.UserProfile]/float
+bool/qiskit.pulse.schedule.Schedule/List[collections.OrderedDict[str, Any]]
+Optional[datetime.datetime]/Optional[List[str]]
+str/bool/int
+Optional[datetime.datetime]/Optional[List[str]]
+str/List[collections.OrderedDict[str, Any]]/Dict[str, object]
+str/int/Optional[ibis.expr.TimeConstr]
+str/List[zerver.models.UserProfile]/float
+str/bool/Set[Tuple[str, str]]
+Optional[datetime.datetime]/Optional[List[str]]
+str/List[Tuple[mypy.nodes.Lvalue, mypy.nodes.Expression, List[mypy.nodes.Expression]]]/int
+Optional[datetime.datetime]/Optional[List[str]]
+Tuple[bool, Optional[str], bool]/Dict[str, object]/str
+str/int/Optional[ibis.expr.TimeConstr]
+str/Optional[IO]/List[str]
+MockButton/str/Union[IO[bytes], IO[str]]
+Optional[DiskEncryptionSetParameters]/Optional[int]/Optional[models.EventRoutesDeleteOptions]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+str/List[str]/official.nlp.modeling.ops.decoding_module.Output
+Optional[str]/Optional[tensorflow.Tensor]/Optional[USER_MAY_PUBLISH_ROOM_CALLBACK]
+Optional[Union[str, ApplicationGatewaySslProtocol]]/Optional[List[SubnetOverrideFragment]]/Optional[List[SubnetOverride]]
+Optional[bool]/Optional[float]/Optional[Callable[[Any], None]]
+Optional[Union[str, ScheduleDay]]/Optional[List[AzurePlan]]/Optional[str]
+bool/datetime.datetime/List[Tuple[Any, Any]]
+datetime.datetime/Dict[str, str]/List[collections.OrderedDict[str, Any]]
+str/List[zerver.models.UserProfile]/bool
+Orange.data.Domain/mypy.types.Type/threading.Thread
+str/asyncio.AbstractEventLoop/vyper.old_codegen.lll_node.LLLnode
+int/str/mypy.nodes.ForStmt
+str/Tuple[Pos, str]/int
+str/int/bytes
+str/set/Dict[str, str]
+
+float/str/mypy.options.Options
+core.util._DebugFile/str/tuple
+Dict[str, Any]/List[int]/Optional[mypy.util.IdMapper]
+str/int/tokenize.TokenInfo
+core.util._DebugFile/str/tuple
+Dict[str, Any]/List[int]/Optional[mypy.util.IdMapper]
+bool/Tuple[bool, Optional[str]]
+bool
+bool/Union[bool, List[bool]]
+bool/pandas.Series
+bool
+float/datetime.timedelta/unittest.mock.MagicMock
+bool
+Optional[float]/series_options.Union[global_options.TooltipOpts, dict, None]
+int/Signal/Set[V]
+int/bool/Optional[Union[List[str], str]]
+Optional[str]/bool/core.Listener
+Optional[SubResource]
+str/bool/Optional[str]
+azure.purview.scanning.core.rest.HttpRequest/rasa.shared.core.training_data.story_reader.story_reader.StoryReader/PaymentRequest
+bool/types.Init/int
+Optional[int]/bool
+int/bool/Set[str]
+Optional[int]
+int/ControlledGate/synapse.types.RoomAlias
+zerver.models.UserProfile/airflow.timetables.schedules.Delta/str
+Dict[str, Any]/Optional[freqtrade.persistence.LocalTrade]/str
+zerver.models.UserProfile/airflow.timetables.schedules.Delta/str
+
+
+
+
+Tuple[Pos, str]/List[Hunk]/Iterator[str]
+Optional[bool]/Optional[ExtendedLocation]/Optional[Union[str, models.AlertState]]
+List[str]/Optional[List[TrackDescriptor]]/str
+str/Dict/pipeline.StepType
+Optional[str]/Optional[List[str]]/Optional[models.MarketplaceProductLogUpdate]
+Optional[Union[str, models.Locale]]/int/str
+Optional[Union[str, models.ManagementState]]/Optional[str]/Optional[Union[str, models.Enum12]]
+bool/datetime.datetime
+bool/azure.messaging.webpubsubservice.core.rest.HttpRequest/datetime.datetime
+tornado.concurrent.Future/Set[str]/Dict[types.ExtraCommandName, Callable]
+str/Tuple[Optional[float], Optional[int]]/list
+str/Optional[int]/Optional[str]
+VulnData/str/Set[Tuple[str, str]]
+set/mypy.nodes.TypeInfo/mypy.types.CallableType
+VulnData/Tuple[bool, Optional[str], bool]/azure.purview.catalog.core.rest.HttpRequest
+set/mypy.nodes.TypeInfo/mypy.types.CallableType
+VulnData/Tuple[bool, Optional[str], bool]/azure.purview.catalog.core.rest.HttpRequest
+str/Tuple[List[str], int]/Tuple[List[str], List[str]]
+VulnData/azure.purview.catalog.core.rest.HttpRequest/Set[Tuple[str, str]]
+bool/tokeniser.Token/Tuple[_devbuild.gen.id_kind_asdl.Id_t, str]
+Optional[TrafficAnalyticsProperties]/Optional[datetime.datetime]/Optional[List[str]]
+str/int/LockFile
+Optional[TrafficAnalyticsProperties]/Optional[datetime.datetime]/Optional[List[str]]
+bool/dict/str
+int/str/float
+str/Union[zerver.models.UserProfile, None]/Generator
+Optional[bool]/int/Optional[str]
+set/homeassistant.config_entries.ConfigEntry/dict[str, Any]
+str/int/Optional[ibis.expr.TimeConstr]
+str/List[zerver.models.UserProfile]/float
+bool/List[collections.OrderedDict[str, Any]]/dict
+Optional[datetime.datetime]/Optional[List[str]]
+str/bool/int
+Optional[datetime.datetime]/Optional[List[str]]
+collections.OrderedDict[str, Any]/Union[qiskit.QuantumCircuit, List[qiskit.QuantumCircuit]]/List[collections.OrderedDict[str, Any]]
+str/int/Optional[ibis.expr.TimeConstr]
+str/List[zerver.models.UserProfile]/float
+bool/str/datetime.datetime
+Optional[datetime.datetime]/Optional[List[str]]
+str/List[Tuple[mypy.nodes.Lvalue, mypy.nodes.Expression, List[mypy.nodes.Expression]]]/int
+Optional[datetime.datetime]/Optional[List[str]]
+Tuple[bool, Optional[str], bool]/Dict[str, object]/str
+str/int/Optional[ibis.expr.TimeConstr]
+str/List[zerver.models.UserProfile]/float
+MockButton/str/Union[IO[bytes], IO[str]]
+Optional[DiskEncryptionSetParameters]/Optional[int]/Optional[models.EventRoutesDeleteOptions]
+str/couchbase_core.subdocument.Spec/bs4.BeautifulSoup
+Optional[Union[str, QueryStringCachingBehavior]]/Optional[Union[str, AfdQueryStringCachingBehavior]]/Optional[List[str]]
+Optional[sentry.models.Organization]/Optional[List[int]]/bool
+Optional[int]/Optional[dict]/Optional[str]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bokeh.application.Application/str/numpy.ndarray
+datetime.datetime/float/datetime.timedelta
+Optional[X509CertificateProperties]/Optional[bool]/Optional[List[IoTSecurityDeviceRecommendation]]
+qiskit.opflow.operator_base.OperatorBase/Dict[str, Any]/list_ops.list_op.ListOp
+datetime.datetime/numpy.datetime64/dict
+str/LeftInfo/Tuple[str, str, str, str, str]
+str/ExpressionNode/Iterable[Tuple[Any, Any]]
+bool
+datetime.datetime.timedelta/datetime.timedelta/plenum.common.event_bus.ExternalBus.Destination
+datetime.datetime/datetime.date/datetime.timedelta
+str/pandas._ArrayLike/int
+datetime.datetime/datetime.date/datetime.timedelta
+str/Generator[Any, Any, None]/List[str]
+datetime.date/datetime.datetime/List[str]
+int/tokenize.TokenInfo/FileInfo
+datetime.datetime/Optional[str]/Iterator[ParsedLine]
+
+
+
+
+
+int/Tuple[float, float]/Union[float, List[float]]
+qiskit.opflow.operator_base.OperatorBase/Dict[str, Any]/list_ops.list_op.ListOp
+datetime.datetime/datetime.timedelta/float
+datetime.datetime.timedelta/datetime.timedelta/messages.FederationProviderConfigurationResponse
+tests.common.MockConfigEntry/unittest.mock.MagicMock/model.Integration
+datetime.datetime.timedelta/datetime.timedelta/plenum.common.event_bus.ExternalBus.Destination
+tests.common.MockConfigEntry/unittest.mock.MagicMock/model.Integration
+bytes/str/FileInfo
+datetime.datetime/float/raiden.transfer.identifiers.CanonicalIdentifier
+str/pandas._ArrayLike/int
+tests.common.MockConfigEntry/unittest.mock.MagicMock/model.Integration
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bool/numpy.ndarray/Optional[Callable[[Any], Any]]
+str
+mypyc.ir.ops.Value/List[Any]/Optional[str]
+Dict[str, str]/int/dict
+int/Iterable[Dict[str, Any]]/List[Tuple[mypy.nodes.Lvalue, mypy.nodes.Expression, List[mypy.nodes.Expression]]]
+Callable/AS2OneWayAgreement/EdifactOneWayAgreement
+str/superset.models.dashboard.Dashboard/Dict[grr_response_core.lib.rdfvalue.RDFDateTime, grr_response_core.lib.rdfvalues.stats.ClientGraphSeries]
+str
+frontend.args._Attributes/List[_devbuild.gen.syntax_asdl.Token]/pendulum.datetime.DateTime
+str
+optparse.Values/argparse.Namespace/mitmproxy.options.Options
+str/numpy.ndarray/bokeh.application.Application
+raiden.transfer.state.TokenNetworkState/urllib.parse.ParseResult/ast.AST
+coredata.KeyedOptionDictType/str/dict
+TSerializable/Dict[str, Any]/Tuple[srctools.props_config.Config, srctools.game.Game, srctools.filesys.FileSystemChain, Set[srctools.filesys.FileSystem], srctools.scripts.plugin.PluginFinder]
+str
+str/Dict[str, bool]/Optional[str]
+Dict[str, Any]/polyaxon.schemas.types.V1UriType/List[List[str]]
+str/bytes
+coredata.KeyedOptionDictType/List[bytes]/Dict[str, bool]
+
+
+
+
+str/Optional[str]/bytes
+str/Union[bytes, str]
+
+
+
+
+
+
+
+
+items.DateTime/datetime.datetime/float
+int/str/qiskit.opflow.operator_base.OperatorBase
+int/str
+int
+str/Optional[str]/bool
+int/Optional[bool]/str
+bool/Union[str, models.FileRangeWriteType]/str
+Optional[int]/bool/float
+Optional[models.PathHTTPHeaders]/Tuple[float, float]/Optional[Tuple[float, float]]
+bool/Optional[str]/Optional[bool]
+freqtrade.plugins.protections.ProtectionReturn/str/int
+int/str/qiskit.opflow.operator_base.OperatorBase
+int/str
+int/Set[int]
+Optional[bool]
+Optional[bool]/bool/str
+bool/str/Union[str, models.FileRangeWriteType]
+bool/str/int
+str/datetime.datetime/webdnn.model.Model
+int/str/motor.motor_asyncio.AsyncIOMotorDatabase
+str/datetime.datetime/webdnn.model.Model
+int/str/motor.motor_asyncio.AsyncIOMotorDatabase
+int/str
+int/Set[int]
+Optional[bool]
+Optional[bool]/bool/str
+bool/Union[str, models.FileRangeWriteType]/str
+Optional[int]/float/bool
+str/items.Date/datetime.date
+int/str/motor.motor_asyncio.AsyncIOMotorDatabase
+int/str
+int/crypto.bls.bls_key_register.BlsKeyRegister
+str/Tuple[float, float, float]/items.Time
+models.DiskEncryptionSetUpdate/models.DiskEncryptionSet
+bool/Optional[bool]/str
+bool/Union[str, models.FileRangeWriteType]/str
+str/Tuple[float, float, float]/items.Time
+models.DiskEncryptionSetUpdate/models.DiskEncryptionSet
+bool/Optional[bool]/str
+bool/Union[str, models.FileRangeWriteType]/str
+Optional[int]/float/bool
+MediaGraphInstance/models.Warehouse/pretix.api.models.WebHook
+datetime.datetime/float/dict
+Tuple[float, float]/Optional[datetime.tzinfo]/Optional[Tuple[float, float]]
+datetime.datetime/str/float
+Optional[datetime.tzinfo]/Optional[str]/Dict[str, str]
+bool/CFunctionDescription/mypy.types.CallableType
+pegen.grammar.Grammar/List[mypy.types.ProperType]/mypyc.ir.ops.Value
+bool/float/str
+pegen.grammar.Grammar/homeassistant.helpers.entity_registry.EntityRegistry/List[mypy.types.ProperType]
+bool/float/str
+str
+Tuple[float, float]/Optional[Tuple[float, float]]/Optional[models.PathHTTPHeaders]
+Optional[Union[str, models.Locale]]/Optional[str]/str
+int/datetime.datetime/Optional[datetime.datetime]
+float/datetime.datetime/Union[int, float]
+Tuple[float, float]/Optional[models.PathHTTPHeaders]/Optional[Tuple[float, float]]
+int/str
+str/Final/dict
+Optional[List[str]]/Set[str]
+int/str/bool
+Optional[int]/int/bool
+int, list/rx.core.RelativeTime/int
+int/str/numpy.ndarray
+str/int/Optional[int]
+str/Optional[int]/options.series_options.Union[ToolBoxFeatureDataZoomOpts, dict]
+int, list/rx.core.RelativeTime/int
+int/str/numpy.ndarray
+str/int/Optional[int]
+str/Optional[int]/options.series_options.Union[ToolBoxFeatureDataZoomOpts, dict]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

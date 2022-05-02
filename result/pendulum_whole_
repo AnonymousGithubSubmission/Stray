@@ -1,0 +1,859 @@
+decode <func>
+def (string: builtins.bytes, encodings: builtins.list[builtins.str] =) -> Union[builtins.str, builtins.str]
+encode <func>
+def (string: builtins.str, encodings: builtins.list[builtins.str] =) -> Union[builtins.bytes, builtins.bytes]
+__init__ <func>
+def (self: pendulum.tz.exceptions.NonExistingTime, dt: pendulum.tz.exceptions.NonExistingTime)
+def (self: pendulum.tz.exceptions.NonExistingTime, dt: builtins.dict[builtins.str, def (*Any, **Any) -> Any])
+def (self: pendulum.tz.exceptions.NonExistingTime, dt: builtins.dict[builtins.str, builtins.int])
+__init__ <func>
+def (self: pendulum.tz.exceptions.AmbiguousTime, dt: pendulum.tz.exceptions.NonExistingTime)
+def (self: pendulum.tz.exceptions.AmbiguousTime, dt: builtins.dict[builtins.str, def (*Any, **Any) -> Any])
+def (self: pendulum.tz.exceptions.AmbiguousTime, dt: builtins.dict[builtins.str, builtins.int])
+__init__ <func>
+def (self: pendulum.tz.zoneinfo.exceptions.InvalidTimezone, name: builtins.dict[builtins.str, pendulum.tz.zoneinfo.exceptions.InvalidTimezone])
+def (self: pendulum.tz.zoneinfo.exceptions.InvalidTimezone, name: builtins.set[pendulum.tz.zoneinfo.exceptions.InvalidZoneinfoFile])
+def (self: pendulum.tz.zoneinfo.exceptions.InvalidTimezone, name: pendulum.tz.zoneinfo.exceptions.InvalidTimezone)
+__init__ <func>
+def (self: pendulum.tz.zoneinfo.exceptions.InvalidPosixSpec, spec: builtins.dict[builtins.str, pendulum.tz.zoneinfo.exceptions.InvalidTimezone])
+def (self: pendulum.tz.zoneinfo.exceptions.InvalidPosixSpec, spec: builtins.set[pendulum.tz.zoneinfo.exceptions.InvalidZoneinfoFile])
+def (self: pendulum.tz.zoneinfo.exceptions.InvalidPosixSpec, spec: pendulum.tz.zoneinfo.exceptions.InvalidTimezone)
+f <func>
+any
+__init__ <func>
+timeout
+offset <func>
+def (self: pendulum.tz.zoneinfo.transition_type.TransitionType) -> builtins.int
+def (self: pendulum.tz.zoneinfo.transition_type.TransitionType) -> builtins.int
+def (self: pendulum.tz.zoneinfo.transition_type.TransitionType) -> builtins.int
+abbreviation <func>
+def (self: pendulum.tz.zoneinfo.transition_type.TransitionType) -> builtins.str
+def (self: pendulum.tz.zoneinfo.transition_type.TransitionType) -> builtins.str
+def (self: pendulum.tz.zoneinfo.transition_type.TransitionType) -> builtins.str
+is_dst <func>
+def (self: pendulum.tz.zoneinfo.transition_type.TransitionType) -> builtins.bool
+def (self: pendulum.tz.zoneinfo.transition_type.TransitionType) -> builtins.bool
+def (self: pendulum.tz.zoneinfo.transition_type.TransitionType) -> builtins.bool
+utcoffset <func>
+def (self: pendulum.tz.zoneinfo.transition_type.TransitionType) -> datetime.timedelta
+def (self: pendulum.tz.zoneinfo.transition_type.TransitionType) -> datetime.timedelta
+def (self: pendulum.tz.zoneinfo.transition_type.TransitionType) -> datetime.timedelta
+__repr__ <func>
+def (pendulum.tz.zoneinfo.transition_type.TransitionType) -> builtins.str
+def (pendulum.tz.zoneinfo.transition_type.TransitionType) -> builtins.str
+def (pendulum.tz.zoneinfo.transition_type.TransitionType) -> builtins.str
+_parse_abbr <func>
+def (text: builtins.str) -> builtins.str
+_parse_offset <func>
+def (text: builtins.str, sign: builtins.int =) -> builtins.int
+def (text: builtins.str, sign: builtins.float =) -> builtins.float
+__init__ <func>
+def (self: pendulum.tz.zoneinfo.posix_timezone.PosixTransition, offset: builtins.int)
+def (self: pendulum.tz.zoneinfo.posix_timezone.PosixTransition, offset: builtins.bool)
+def (self: pendulum.tz.zoneinfo.posix_timezone.PosixTransition, offset: builtins.int)
+offset <func>
+def (self: pendulum.tz.zoneinfo.posix_timezone.PosixTransition) -> builtins.int
+def (self: pendulum.tz.zoneinfo.posix_timezone.PosixTransition) -> builtins.int
+def (self: pendulum.tz.zoneinfo.posix_timezone.PosixTransition) -> builtins.int
+trans_offset <func>
+def (self: pendulum.tz.zoneinfo.posix_timezone.PosixTransition, is_leap: builtins.set[pendulum.tz.zoneinfo.posix_timezone.PosixTimezone], jan1_weekday: builtins.set[pendulum.tz.zoneinfo.posix_timezone.PosixTimezone])
+def (self: pendulum.tz.zoneinfo.posix_timezone.PosixTransition, is_leap: builtins.set[pendulum.tz.zoneinfo.posix_timezone.PosixTimezone], jan1_weekday: builtins.dict[builtins.str, def (*Any, **Any) -> Any])
+def (self: pendulum.tz.zoneinfo.posix_timezone.PosixTransition, is_leap: builtins.set[pendulum.tz.zoneinfo.posix_timezone.PosixTimezone], jan1_weekday: pendulum.tz.zoneinfo.posix_timezone.PosixTransition)
+__init__ <func>
+timeout
+day <func>
+def (self: pendulum.tz.zoneinfo.posix_timezone.JPosixTransition) -> builtins.int
+def (self: pendulum.tz.zoneinfo.posix_timezone.JPosixTransition) -> builtins.int
+def (self: pendulum.tz.zoneinfo.posix_timezone.JPosixTransition) -> builtins.int
+trans_offset <func>
+timeout
+__init__ <func>
+timeout
+day <func>
+def (self: pendulum.tz.zoneinfo.posix_timezone.NPosixTransition) -> builtins.int
+def (self: pendulum.tz.zoneinfo.posix_timezone.NPosixTransition) -> builtins.int
+def (self: pendulum.tz.zoneinfo.posix_timezone.NPosixTransition) -> builtins.int
+trans_offset <func>
+timeout
+__init__ <func>
+timeout
+month <func>
+def (self: pendulum.tz.zoneinfo.posix_timezone.MPosixTransition) -> builtins.int
+def (self: pendulum.tz.zoneinfo.posix_timezone.MPosixTransition) -> builtins.int
+def (self: pendulum.tz.zoneinfo.posix_timezone.MPosixTransition) -> builtins.int
+week <func>
+def (self: pendulum.tz.zoneinfo.posix_timezone.MPosixTransition) -> builtins.int
+def (self: pendulum.tz.zoneinfo.posix_timezone.MPosixTransition) -> builtins.int
+def (self: pendulum.tz.zoneinfo.posix_timezone.MPosixTransition) -> builtins.int
+weekday <func>
+def (self: pendulum.tz.zoneinfo.posix_timezone.MPosixTransition) -> builtins.int
+def (self: pendulum.tz.zoneinfo.posix_timezone.MPosixTransition) -> builtins.int
+def (self: pendulum.tz.zoneinfo.posix_timezone.MPosixTransition) -> builtins.int
+trans_offset <func>
+timeout
+__init__ <func>
+timeout
+std_abbr <func>
+def (self: pendulum.tz.zoneinfo.posix_timezone.PosixTimezone) -> builtins.str
+def (self: pendulum.tz.zoneinfo.posix_timezone.PosixTimezone) -> builtins.str
+def (self: pendulum.tz.zoneinfo.posix_timezone.PosixTimezone) -> builtins.str
+std_offset <func>
+def (self: pendulum.tz.zoneinfo.posix_timezone.PosixTimezone) -> builtins.int
+def (self: pendulum.tz.zoneinfo.posix_timezone.PosixTimezone) -> builtins.int
+def (self: pendulum.tz.zoneinfo.posix_timezone.PosixTimezone) -> builtins.int
+dst_abbr <func>
+def (self: pendulum.tz.zoneinfo.posix_timezone.PosixTimezone) -> builtins.str
+def (self: pendulum.tz.zoneinfo.posix_timezone.PosixTimezone) -> builtins.str
+def (self: pendulum.tz.zoneinfo.posix_timezone.PosixTimezone) -> builtins.str
+dst_offset <func>
+def (self: pendulum.tz.zoneinfo.posix_timezone.PosixTimezone) -> builtins.int
+def (self: pendulum.tz.zoneinfo.posix_timezone.PosixTimezone) -> builtins.int
+def (self: pendulum.tz.zoneinfo.posix_timezone.PosixTimezone) -> builtins.int
+dst_start <func>
+def (self: pendulum.tz.zoneinfo.posix_timezone.PosixTimezone) -> pendulum.tz.zoneinfo.posix_timezone.PosixTransition
+def (self: pendulum.tz.zoneinfo.posix_timezone.PosixTimezone) -> pendulum.tz.zoneinfo.posix_timezone.PosixTransition
+def (self: pendulum.tz.zoneinfo.posix_timezone.PosixTimezone) -> pendulum.tz.zoneinfo.posix_timezone.PosixTransition
+dst_end <func>
+def (self: pendulum.tz.zoneinfo.posix_timezone.PosixTimezone) -> pendulum.tz.zoneinfo.posix_timezone.PosixTransition
+def (self: pendulum.tz.zoneinfo.posix_timezone.PosixTimezone) -> pendulum.tz.zoneinfo.posix_timezone.PosixTransition
+def (self: pendulum.tz.zoneinfo.posix_timezone.PosixTimezone) -> pendulum.tz.zoneinfo.posix_timezone.PosixTransition
+_posix_spec <func>
+def (spec: builtins.str) -> pendulum.tz.zoneinfo.posix_timezone.PosixTimezone
+posix_spec <func>
+def (spec: builtins.str) -> pendulum.tz.zoneinfo.posix_timezone.PosixTimezone
+__init__ <func>
+def (self: pendulum.locales.locale.Locale, locale: builtins.str, data: builtins.dict[builtins.str, def (*Any, **Any) -> Any])
+def (self: pendulum.locales.locale.Locale, locale: builtins.str, data: builtins.dict[builtins.str, builtins.int])
+def (self: pendulum.locales.locale.Locale, locale: builtins.str, data: builtins.dict[builtins.str, pendulum.locales.locale.Locale])
+normalize_locale <func>
+def (cls: pendulum.locales.locale.Locale, locale: builtins.str) -> Union[builtins.str, builtins.str]
+def (cls: pendulum.locales.locale.Locale, locale: builtins.str) -> Union[builtins.str, builtins.str]
+def (cls: pendulum.locales.locale.Locale, locale: builtins.str) -> Union[builtins.str, builtins.str]
+get <func>
+timeout
+plural <func>
+def (self: pendulum.locales.locale.Locale, number: builtins.dict[builtins.str, def (*Any, **Any) -> Any]) -> Union[builtins.str, builtins.str]
+def (self: pendulum.locales.locale.Locale, number: builtins.dict[builtins.str, builtins.int]) -> Union[builtins.str, builtins.str]
+def (self: pendulum.locales.locale.Locale, number: builtins.list[def (*Any, **Any) -> Any]) -> Union[builtins.str, builtins.str]
+ordinal <func>
+def (self: pendulum.locales.locale.Locale, number: builtins.dict[builtins.str, def (*Any, **Any) -> Any]) -> Union[builtins.str, builtins.str]
+def (self: pendulum.locales.locale.Locale, number: builtins.dict[builtins.str, builtins.int]) -> Union[builtins.str, builtins.str]
+def (self: pendulum.locales.locale.Locale, number: builtins.list[def (*Any, **Any) -> Any]) -> Union[builtins.str, builtins.str]
+__repr__ <func>
+def (pendulum.locales.locale.Locale) -> builtins.str
+def (pendulum.locales.locale.Locale) -> builtins.str
+def (pendulum.locales.locale.Locale) -> builtins.str
+__repr__ <func>
+any
+is_leap <func>
+def (year: builtins.int) -> builtins.bool
+def (year: builtins.bool) -> builtins.bool
+def (year: builtins.float) -> builtins.bool
+week_day <func>
+def (year: builtins.int, month: builtins.int, day: builtins.int) -> builtins.int
+def (year: builtins.int, month: builtins.int, day: builtins.bool) -> builtins.int
+def (year: builtins.int, month: builtins.bool, day: builtins.int) -> builtins.int
+days_in_year <func>
+def (year: builtins.int) -> Union[builtins.int, builtins.int]
+def (year: builtins.bool) -> Union[builtins.int, builtins.int]
+def (year: builtins.float) -> Union[builtins.int, builtins.int]
+timestamp <func>
+def (dt: datetime.datetime) -> builtins.int
+_day_number <func>
+timeout
+local_time <func>
+timeout
+__init__ <func>
+timeout
+at <func>
+def (self: pendulum.tz.zoneinfo.transition.Transition) -> builtins.int
+def (self: pendulum.tz.zoneinfo.transition.Transition) -> builtins.int
+def (self: pendulum.tz.zoneinfo.transition.Transition) -> builtins.int
+local <func>
+def (self: pendulum.tz.zoneinfo.transition.Transition) -> builtins.int
+def (self: pendulum.tz.zoneinfo.transition.Transition) -> builtins.int
+def (self: pendulum.tz.zoneinfo.transition.Transition) -> builtins.int
+to <func>
+def (self: pendulum.tz.zoneinfo.transition.Transition) -> builtins.int
+def (self: pendulum.tz.zoneinfo.transition.Transition) -> builtins.int
+def (self: pendulum.tz.zoneinfo.transition.Transition) -> builtins.int
+to_utc <func>
+def (self: pendulum.tz.zoneinfo.transition.Transition) -> builtins.int
+def (self: pendulum.tz.zoneinfo.transition.Transition) -> builtins.int
+def (self: pendulum.tz.zoneinfo.transition.Transition) -> builtins.int
+ttype <func>
+def (self: pendulum.tz.zoneinfo.transition.Transition) -> pendulum.tz.zoneinfo.transition_type.TransitionType
+def (self: pendulum.tz.zoneinfo.transition.Transition) -> pendulum.tz.zoneinfo.transition_type.TransitionType
+def (self: pendulum.tz.zoneinfo.transition.Transition) -> pendulum.tz.zoneinfo.transition_type.TransitionType
+previous <func>
+def (self: pendulum.tz.zoneinfo.transition.Transition) -> pendulum.tz.zoneinfo.transition.Transition
+def (self: pendulum.tz.zoneinfo.transition.Transition) -> pendulum.tz.zoneinfo.transition.Transition
+def (self: pendulum.tz.zoneinfo.transition.Transition) -> pendulum.tz.zoneinfo.transition.Transition
+fix <func>
+def (self: pendulum.tz.zoneinfo.transition.Transition) -> builtins.int
+def (self: pendulum.tz.zoneinfo.transition.Transition) -> builtins.int
+def (self: pendulum.tz.zoneinfo.transition.Transition) -> builtins.int
+is_ambiguous <func>
+def (self: pendulum.tz.zoneinfo.transition.Transition, stamp: builtins.int) -> builtins.bool
+def (self: pendulum.tz.zoneinfo.transition.Transition, stamp: builtins.bool) -> builtins.bool
+def (self: pendulum.tz.zoneinfo.transition.Transition, stamp: builtins.int) -> builtins.bool
+is_missing <func>
+def (self: pendulum.tz.zoneinfo.transition.Transition, stamp: builtins.int) -> builtins.bool
+def (self: pendulum.tz.zoneinfo.transition.Transition, stamp: builtins.bool) -> builtins.bool
+def (self: pendulum.tz.zoneinfo.transition.Transition, stamp: builtins.int) -> builtins.bool
+utcoffset <func>
+def (self: pendulum.tz.zoneinfo.transition.Transition) -> datetime.timedelta
+def (self: pendulum.tz.zoneinfo.transition.Transition) -> datetime.timedelta
+def (self: pendulum.tz.zoneinfo.transition.Transition) -> datetime.timedelta
+__contains__ <func>
+timeout
+__repr__ <func>
+def (pendulum.tz.zoneinfo.transition.Transition) -> builtins.str
+def (pendulum.tz.zoneinfo.transition.Transition) -> builtins.str
+def (pendulum.tz.zoneinfo.transition.Transition) -> builtins.str
+total_seconds <func>
+def (self: pendulum.duration.Duration) -> builtins.int*
+def (self: pendulum.duration.Duration) -> builtins.int*
+def (self: pendulum.duration.Duration) -> builtins.int*
+years <func>
+def (self: pendulum.duration.Duration) -> builtins.int
+def (self: pendulum.duration.Duration) -> builtins.int
+def (self: pendulum.duration.Duration) -> builtins.int
+months <func>
+def (self: pendulum.duration.Duration) -> builtins.int
+def (self: pendulum.duration.Duration) -> builtins.int
+def (self: pendulum.duration.Duration) -> builtins.int
+weeks <func>
+def (self: pendulum.duration.Duration) -> builtins.int
+def (self: pendulum.duration.Duration) -> builtins.int
+def (self: pendulum.duration.Duration) -> builtins.int
+days <func>
+def (self: pendulum.duration.Duration) -> builtins.int
+def (self: pendulum.duration.Duration) -> builtins.int
+def (self: pendulum.duration.Duration) -> builtins.int
+remaining_days <func>
+def (self: pendulum.duration.Duration) -> builtins.int
+def (self: pendulum.duration.Duration) -> builtins.int
+def (self: pendulum.duration.Duration) -> builtins.int
+seconds <func>
+def (self: pendulum.duration.Duration) -> builtins.int
+def (self: pendulum.duration.Duration) -> builtins.int
+def (self: pendulum.duration.Duration) -> builtins.int
+microseconds <func>
+def (self: pendulum.duration.Duration) -> builtins.int
+def (self: pendulum.duration.Duration) -> builtins.int
+def (self: pendulum.duration.Duration) -> builtins.int
+invert <func>
+def (self: pendulum.duration.Duration) -> builtins.int
+def (self: pendulum.duration.Duration) -> builtins.int
+def (self: pendulum.duration.Duration) -> builtins.int
+in_seconds <func>
+def (self: pendulum.duration.Duration) -> builtins.int*
+def (self: pendulum.duration.Duration) -> builtins.int*
+def (self: pendulum.duration.Duration) -> builtins.int*
+_sign <func>
+def (self: pendulum.duration.Duration, value: builtins.int) -> Union[builtins.int, Literal[1]?]
+def (self: pendulum.duration.Duration, value: builtins.bool) -> Union[builtins.int, Literal[1]?]
+def (self: pendulum.duration.Duration, value: builtins.float) -> Union[builtins.int, Literal[1]?]
+as_timedelta <func>
+def (self: pendulum.duration.Duration) -> datetime.timedelta*
+def (self: pendulum.duration.Duration) -> datetime.timedelta*
+def (self: pendulum.duration.Duration) -> datetime.timedelta*
+__add__ <func>
+def (pendulum.duration.Duration, builtins.list[pendulum.tz.zoneinfo.transition.Transition]) -> builtins._NotImplementedType
+def (pendulum.duration.Duration, builtins.set[pendulum.time.Time]) -> builtins._NotImplementedType
+def (pendulum.duration.Duration, builtins.dict[builtins.str, typing.IO[Any]]) -> builtins._NotImplementedType
+__sub__ <func>
+timeout
+__neg__ <func>
+def (pendulum.duration.Duration) -> pendulum.duration.Duration
+def (pendulum.duration.Duration) -> pendulum.duration.Duration
+def (pendulum.duration.Duration) -> pendulum.duration.Duration
+_to_microseconds <func>
+def (self: pendulum.duration.Duration) -> builtins.int
+def (self: pendulum.duration.Duration) -> builtins.int
+def (self: pendulum.duration.Duration) -> builtins.int
+__floordiv__ <func>
+timeout
+__mod__ <func>
+timeout
+__init__ <func>
+timeout
+_sign <func>
+def (x: builtins.int) -> builtins.int*
+def (x: builtins.bool) -> builtins.int*
+def (x: builtins.float) -> builtins.int*
+set_test_now <func>
+def (test_now: builtins.list[pendulum.tz.zoneinfo.transition.Transition] =)
+def (test_now: builtins.set[pendulum.time.Time] =)
+def (test_now: builtins.dict[builtins.str, typing.IO[Any]] =)
+get_test_now <func>
+def () -> builtins.str
+has_test_now <func>
+def () -> builtins.bool
+locale <func>
+def (name: builtins.str) -> pendulum.locales.locale.Locale
+def (name: pendulum.locales.locale.Locale) -> pendulum.locales.locale.Locale
+set_locale <func>
+def (name: builtins.str)
+def (name: pendulum.locales.locale.Locale)
+get_locale <func>
+def () -> builtins.str
+week_starts_at <func>
+def (wday: builtins.int)
+def (wday: builtins.bool)
+def (wday: builtins.float)
+week_ends_at <func>
+def (wday: builtins.int)
+def (wday: builtins.bool)
+def (wday: builtins.float)
+transitions <func>
+def (self: pendulum.tz.zoneinfo.timezone.Timezone) -> builtins.list[pendulum.tz.zoneinfo.transition.Transition]
+def (self: pendulum.tz.zoneinfo.timezone.Timezone) -> builtins.list[pendulum.tz.zoneinfo.transition.Transition]
+def (self: pendulum.tz.zoneinfo.timezone.Timezone) -> builtins.list[pendulum.tz.zoneinfo.transition.Transition]
+posix_rule <func>
+def (self: pendulum.tz.zoneinfo.timezone.Timezone) -> pendulum.tz.zoneinfo.posix_timezone.PosixTimezone
+def (self: pendulum.tz.zoneinfo.timezone.Timezone) -> pendulum.tz.zoneinfo.posix_timezone.PosixTimezone
+def (self: pendulum.tz.zoneinfo.timezone.Timezone) -> pendulum.tz.zoneinfo.posix_timezone.PosixTimezone
+_check_ttype <func>
+timeout
+__init__ <func>
+def (self: pendulum.tz.zoneinfo.reader.Reader, extend: builtins.bool =)
+def (self: pendulum.tz.zoneinfo.reader.Reader, extend: builtins.bool =)
+def (self: pendulum.tz.zoneinfo.reader.Reader, extend: builtins.bool =)
+__repr__ <func>
+def (pendulum.time.Time) -> builtins.str
+def (pendulum.time.Time) -> builtins.str
+def (pendulum.time.Time) -> builtins.str
+replace <func>
+timeout
+__getnewargs__ <func>
+def (self: pendulum.time.Time) -> Tuple[pendulum.time.Time]
+def (self: pendulum.time.Time) -> Tuple[pendulum.time.Time]
+def (self: pendulum.time.Time) -> Tuple[pendulum.time.Time]
+_get_state <func>
+def (self: pendulum.time.Time, protocol: builtins.int =) -> Tuple[builtins.int, builtins.int, builtins.int, builtins.int, Union[datetime.tzinfo, None]]
+def (self: pendulum.time.Time, protocol: builtins.float =) -> Tuple[builtins.int, builtins.int, builtins.int, builtins.int, Union[datetime.tzinfo, None]]
+def (self: pendulum.time.Time, protocol: builtins.int =) -> Tuple[builtins.int, builtins.int, builtins.int, builtins.int, Union[datetime.tzinfo, None]]
+__reduce_ex__ <func>
+timeout
+years <func>
+def (self: pendulum.period.Period) -> builtins.int
+def (self: pendulum.period.Period) -> builtins.int
+def (self: pendulum.period.Period) -> builtins.int
+months <func>
+def (self: pendulum.period.Period) -> builtins.int
+def (self: pendulum.period.Period) -> builtins.int
+def (self: pendulum.period.Period) -> builtins.int
+weeks <func>
+def (self: pendulum.period.Period) -> builtins.int
+def (self: pendulum.period.Period) -> builtins.int
+def (self: pendulum.period.Period) -> builtins.int
+days <func>
+def (self: pendulum.period.Period) -> builtins.int
+def (self: pendulum.period.Period) -> builtins.int
+def (self: pendulum.period.Period) -> builtins.int
+remaining_days <func>
+def (self: pendulum.period.Period) -> builtins.int
+def (self: pendulum.period.Period) -> builtins.int
+def (self: pendulum.period.Period) -> builtins.int
+hours <func>
+def (self: pendulum.period.Period) -> builtins.int
+def (self: pendulum.period.Period) -> builtins.int
+def (self: pendulum.period.Period) -> builtins.int
+minutes <func>
+def (self: pendulum.period.Period) -> builtins.int
+def (self: pendulum.period.Period) -> builtins.int
+def (self: pendulum.period.Period) -> builtins.int
+start <func>
+def (self: pendulum.period.Period) -> Any
+def (self: pendulum.period.Period) -> Any
+def (self: pendulum.period.Period) -> Any
+end <func>
+def (self: pendulum.period.Period) -> Any
+def (self: pendulum.period.Period) -> Any
+def (self: pendulum.period.Period) -> Any
+in_years <func>
+def (self: pendulum.period.Period) -> builtins.int
+def (self: pendulum.period.Period) -> builtins.int
+def (self: pendulum.period.Period) -> builtins.int
+in_months <func>
+def (self: pendulum.period.Period) -> builtins.int
+def (self: pendulum.period.Period) -> builtins.int
+def (self: pendulum.period.Period) -> builtins.int
+in_days <func>
+def (self: pendulum.period.Period) -> builtins.int
+def (self: pendulum.period.Period) -> builtins.int
+def (self: pendulum.period.Period) -> builtins.int
+range <func>
+timeout
+as_interval <func>
+def (self: pendulum.period.Period) -> pendulum.duration.Duration
+def (self: pendulum.period.Period) -> pendulum.duration.Duration
+def (self: pendulum.period.Period) -> pendulum.duration.Duration
+__contains__ <func>
+timeout
+__add__ <func>
+timeout
+__neg__ <func>
+def (pendulum.period.Period) -> pendulum.period.Period
+def (pendulum.period.Period) -> pendulum.period.Period
+def (pendulum.period.Period) -> pendulum.period.Period
+__divmod__ <func>
+timeout
+__abs__ <func>
+def (pendulum.period.Period) -> pendulum.period.Period
+def (pendulum.period.Period) -> pendulum.period.Period
+def (pendulum.period.Period) -> pendulum.period.Period
+__repr__ <func>
+def (pendulum.period.Period) -> builtins.str
+def (pendulum.period.Period) -> builtins.str
+def (pendulum.period.Period) -> builtins.str
+__str__ <func>
+def (pendulum.period.Period) -> builtins.str
+def (pendulum.period.Period) -> builtins.str
+def (pendulum.period.Period) -> builtins.str
+_cmp <func>
+timeout
+_getstate <func>
+timeout
+__hash__ <func>
+def (self: pendulum.period.Period) -> builtins.int
+def (self: pendulum.period.Period) -> builtins.int
+def (self: pendulum.period.Period) -> builtins.int
+__eq__ <func>
+timeout
+fold <func>
+def (self: pendulum.datetime.DateTime) -> builtins.int
+def (self: pendulum.datetime.DateTime) -> builtins.int
+def (self: pendulum.datetime.DateTime) -> builtins.int
+timestamp <func>
+def (self: pendulum.datetime.DateTime) -> builtins.int
+def (self: pendulum.datetime.DateTime) -> builtins.int
+def (self: pendulum.datetime.DateTime) -> builtins.int
+float_timestamp <func>
+def (self: pendulum.datetime.DateTime) -> builtins.int
+def (self: pendulum.datetime.DateTime) -> builtins.int
+def (self: pendulum.datetime.DateTime) -> builtins.int
+int_timestamp <func>
+any
+timezone <func>
+def (self: pendulum.datetime.DateTime) -> Union[datetime.tzinfo, None]
+def (self: pendulum.datetime.DateTime) -> Union[datetime.tzinfo, None]
+def (self: pendulum.datetime.DateTime) -> Union[datetime.tzinfo, None]
+timezone_name <func>
+any
+is_dst <func>
+def (self: pendulum.datetime.DateTime) -> builtins.bool
+def (self: pendulum.datetime.DateTime) -> builtins.bool
+def (self: pendulum.datetime.DateTime) -> builtins.bool
+get_offset <func>
+def (self: pendulum.datetime.DateTime) -> builtins.int*
+def (self: pendulum.datetime.DateTime) -> builtins.int*
+def (self: pendulum.datetime.DateTime) -> builtins.int*
+date <func>
+def (self: pendulum.datetime.DateTime) -> pendulum.date.Date*
+def (self: pendulum.datetime.DateTime) -> pendulum.date.Date*
+def (self: pendulum.datetime.DateTime) -> pendulum.date.Date*
+time <func>
+def (self: pendulum.datetime.DateTime) -> pendulum.time.Time*
+def (self: pendulum.datetime.DateTime) -> pendulum.time.Time*
+def (self: pendulum.datetime.DateTime) -> pendulum.time.Time*
+naive <func>
+def (self: pendulum.datetime.DateTime) -> pendulum.datetime.DateTime
+def (self: pendulum.datetime.DateTime) -> pendulum.datetime.DateTime
+def (self: pendulum.datetime.DateTime) -> pendulum.datetime.DateTime
+__str__ <func>
+def (pendulum.datetime.DateTime) -> builtins.str
+def (pendulum.datetime.DateTime) -> builtins.str
+def (pendulum.datetime.DateTime) -> builtins.str
+__repr__ <func>
+def (pendulum.datetime.DateTime) -> builtins.str
+def (pendulum.datetime.DateTime) -> builtins.str
+def (pendulum.datetime.DateTime) -> builtins.str
+is_future <func>
+any
+is_past <func>
+any
+is_anniversary <func>
+def (self: pendulum.datetime.DateTime, dt: pendulum.mixins.default.FormattableMixin =) -> builtins.bool
+def (self: pendulum.datetime.DateTime, dt: pendulum.date.Date =) -> builtins.bool
+def (self: pendulum.datetime.DateTime, dt: pendulum.datetime.DateTime =) -> builtins.bool
+_subtract_timedelta <func>
+def (self: pendulum.datetime.DateTime, delta: pendulum.duration.Duration) -> pendulum.datetime.DateTime
+def (self: pendulum.datetime.DateTime, delta: pendulum.period.Period) -> pendulum.datetime.DateTime
+def (self: pendulum.datetime.DateTime, delta: pendulum.duration.Duration) -> pendulum.datetime.DateTime
+diff <func>
+timeout
+fromtimestamp <func>
+timeout
+utcfromtimestamp <func>
+def (cls: pendulum.datetime.DateTime, t: builtins.int) -> pendulum.datetime.DateTime
+def (cls: pendulum.datetime.DateTime, t: builtins.bool) -> pendulum.datetime.DateTime
+def (cls: pendulum.datetime.DateTime, t: builtins.float) -> pendulum.datetime.DateTime
+fromordinal <func>
+def (cls: pendulum.datetime.DateTime, n: builtins.int) -> pendulum.datetime.DateTime
+def (cls: pendulum.datetime.DateTime, n: builtins.bool) -> pendulum.datetime.DateTime
+def (cls: pendulum.datetime.DateTime, n: builtins.int) -> pendulum.datetime.DateTime
+combine <func>
+timeout
+astimezone <func>
+def (self: pendulum.datetime.DateTime, tz: datetime.timezone =) -> pendulum.datetime.DateTime
+def (self: pendulum.datetime.DateTime, tz: pendulum.tz.timezone.TimezoneFile =) -> pendulum.datetime.DateTime
+def (self: pendulum.datetime.DateTime, tz: datetime.tzinfo =) -> pendulum.datetime.DateTime
+__getnewargs__ <func>
+def (self: pendulum.datetime.DateTime) -> Tuple[pendulum.datetime.DateTime]
+def (self: pendulum.datetime.DateTime) -> Tuple[pendulum.datetime.DateTime]
+def (self: pendulum.datetime.DateTime) -> Tuple[pendulum.datetime.DateTime]
+_getstate <func>
+def (self: pendulum.datetime.DateTime, protocol: builtins.int =) -> Tuple[builtins.int, builtins.int, builtins.int, builtins.int, builtins.int, builtins.int, builtins.int, Union[datetime.tzinfo, None]]
+def (self: pendulum.datetime.DateTime, protocol: builtins.float =) -> Tuple[builtins.int, builtins.int, builtins.int, builtins.int, builtins.int, builtins.int, builtins.int, Union[datetime.tzinfo, None]]
+def (self: pendulum.datetime.DateTime, protocol: builtins.int =) -> Tuple[builtins.int, builtins.int, builtins.int, builtins.int, builtins.int, builtins.int, builtins.int, Union[datetime.tzinfo, None]]
+__reduce_ex__ <func>
+timeout
+_cmp <func>
+timeout
+day_of_week <func>
+def (self: pendulum.date.Date) -> builtins.int
+def (self: pendulum.date.Date) -> builtins.int
+def (self: pendulum.date.Date) -> builtins.int
+week_of_year <func>
+def (self: pendulum.date.Date) -> builtins.int
+def (self: pendulum.date.Date) -> builtins.int
+def (self: pendulum.date.Date) -> builtins.int
+days_in_month <func>
+def (self: pendulum.date.Date) -> builtins.int
+def (self: pendulum.date.Date) -> builtins.int
+def (self: pendulum.date.Date) -> builtins.int
+quarter <func>
+def (self: pendulum.date.Date) -> builtins.int*
+def (self: pendulum.date.Date) -> builtins.int*
+def (self: pendulum.date.Date) -> builtins.int*
+to_date_string <func>
+def (self: pendulum.date.Date) -> builtins.str
+def (self: pendulum.date.Date) -> builtins.str
+def (self: pendulum.date.Date) -> builtins.str
+to_formatted_date_string <func>
+def (self: pendulum.date.Date) -> builtins.str
+def (self: pendulum.date.Date) -> builtins.str
+def (self: pendulum.date.Date) -> builtins.str
+__repr__ <func>
+def (pendulum.date.Date) -> builtins.str
+def (pendulum.date.Date) -> builtins.str
+def (pendulum.date.Date) -> builtins.str
+is_future <func>
+def (self: pendulum.date.Date) -> builtins.bool
+def (self: pendulum.date.Date) -> builtins.bool
+def (self: pendulum.date.Date) -> builtins.bool
+is_past <func>
+def (self: pendulum.date.Date) -> builtins.bool
+def (self: pendulum.date.Date) -> builtins.bool
+def (self: pendulum.date.Date) -> builtins.bool
+is_leap_year <func>
+def (self: pendulum.date.Date) -> builtins.bool
+def (self: pendulum.date.Date) -> builtins.bool
+def (self: pendulum.date.Date) -> builtins.bool
+is_long_year <func>
+def (self: pendulum.date.Date) -> builtins.bool
+def (self: pendulum.date.Date) -> builtins.bool
+def (self: pendulum.date.Date) -> builtins.bool
+is_same_day <func>
+def (self: pendulum.date.Date, dt: pendulum.date.Date) -> builtins.bool
+def (self: pendulum.date.Date, dt: pendulum.datetime.DateTime) -> builtins.bool
+def (self: pendulum.date.Date, dt: pendulum.date.Date) -> builtins.bool
+is_anniversary <func>
+def (self: pendulum.date.Date, dt: pendulum.mixins.default.FormattableMixin =) -> builtins.bool
+def (self: pendulum.date.Date, dt: pendulum.date.Date =) -> builtins.bool
+def (self: pendulum.date.Date, dt: datetime.date =) -> builtins.bool
+add <func>
+timeout
+diff <func>
+timeout
+_start_of_day <func>
+def (self: pendulum.date.Date) -> pendulum.date.Date
+def (self: pendulum.date.Date) -> pendulum.date.Date
+def (self: pendulum.date.Date) -> pendulum.date.Date
+_end_of_day <func>
+def (self: pendulum.date.Date) -> pendulum.date.Date
+def (self: pendulum.date.Date) -> pendulum.date.Date
+def (self: pendulum.date.Date) -> pendulum.date.Date
+replace <func>
+timeout
+name <func>
+def (self: pendulum.tz.timezone.Timezone) -> builtins.str
+def (self: pendulum.tz.timezone.Timezone) -> builtins.str
+def (self: pendulum.tz.timezone.Timezone) -> builtins.str
+__repr__ <func>
+def (pendulum.tz.timezone.Timezone) -> builtins.str
+def (pendulum.tz.timezone.Timezone) -> builtins.str
+def (pendulum.tz.timezone.Timezone) -> builtins.str
+__getinitargs__ <func>
+def (self: pendulum.tz.timezone.Timezone) -> Tuple[builtins.str]
+def (self: pendulum.tz.timezone.Timezone) -> Tuple[builtins.str]
+def (self: pendulum.tz.timezone.Timezone) -> Tuple[builtins.str]
+offset <func>
+def (self: pendulum.tz.timezone.FixedTimezone) -> builtins.int
+def (self: pendulum.tz.timezone.FixedTimezone) -> builtins.int
+def (self: pendulum.tz.timezone.FixedTimezone) -> builtins.int
+_convert <func>
+def (self: pendulum.tz.timezone.FixedTimezone, dt: pendulum.datetime.DateTime) -> Union[pendulum.datetime.DateTime, pendulum.datetime.DateTime]
+def (self: pendulum.tz.timezone.FixedTimezone, dt: datetime.datetime) -> Union[datetime.datetime*, datetime.datetime]
+def (self: pendulum.tz.timezone.FixedTimezone, dt: pendulum.datetime.DateTime) -> Union[pendulum.datetime.DateTime, pendulum.datetime.DateTime]
+utcoffset <func>
+def (self: pendulum.tz.timezone.FixedTimezone, dt: builtins.list[pendulum.tz.zoneinfo.transition.Transition]) -> datetime.timedelta
+def (self: pendulum.tz.timezone.FixedTimezone, dt: builtins.set[pendulum.time.Time]) -> datetime.timedelta
+def (self: pendulum.tz.timezone.FixedTimezone, dt: builtins.dict[builtins.str, typing.IO[Any]]) -> datetime.timedelta
+dst <func>
+def (self: pendulum.tz.timezone.FixedTimezone, dt: builtins.list[pendulum.tz.zoneinfo.transition.Transition]) -> datetime.timedelta*
+def (self: pendulum.tz.timezone.FixedTimezone, dt: builtins.set[pendulum.time.Time]) -> datetime.timedelta*
+def (self: pendulum.tz.timezone.FixedTimezone, dt: builtins.dict[builtins.str, typing.IO[Any]]) -> datetime.timedelta*
+tzname <func>
+def (self: pendulum.tz.timezone.FixedTimezone, dt: builtins.list[pendulum.tz.zoneinfo.transition.Transition]) -> builtins.str
+def (self: pendulum.tz.timezone.FixedTimezone, dt: builtins.set[pendulum.time.Time]) -> builtins.str
+def (self: pendulum.tz.timezone.FixedTimezone, dt: builtins.dict[builtins.str, typing.IO[Any]]) -> builtins.str
+__getinitargs__ <func>
+def (self: pendulum.tz.timezone.FixedTimezone) -> Tuple[builtins.int, builtins.str]
+def (self: pendulum.tz.timezone.FixedTimezone) -> Tuple[builtins.int, builtins.str]
+def (self: pendulum.tz.timezone.FixedTimezone) -> Tuple[builtins.int, builtins.str]
+_get_windows_timezone <func>
+any
+_get_darwin_timezone <func>
+def () -> pendulum.tz.timezone.Timezone
+fixed_timezone <func>
+any
+format <func>
+timeout
+for_json <func>
+def (self: pendulum.mixins.default.FormattableMixin) -> builtins.str*
+def (self: pendulum.mixins.default.FormattableMixin) -> builtins.str*
+def (self: pendulum.mixins.default.FormattableMixin) -> builtins.str*
+__str__ <func>
+any
+_parse_iso8601_duration <func>
+any
+_get_iso_8601_week <func>
+timeout
+_parse_common <func>
+timeout
+__init__ <func>
+timeout
+naive <func>
+timeout
+date <func>
+timeout
+time <func>
+timeout
+duration <func>
+timeout
+period <func>
+timeout
+_divide_and_round <func>
+timeout
+total_minutes <func>
+def (self: pendulum.duration.Duration) -> builtins.float
+total_hours <func>
+def (self: pendulum.duration.Duration) -> builtins.float
+total_days <func>
+def (self: pendulum.duration.Duration) -> builtins.float
+total_weeks <func>
+def (self: pendulum.duration.Duration) -> builtins.float
+hours <func>
+def (self: pendulum.duration.Duration) -> builtins.int
+minutes <func>
+def (self: pendulum.duration.Duration) -> builtins.int
+remaining_seconds <func>
+def (self: pendulum.duration.Duration) -> builtins.int
+in_weeks <func>
+def (self: pendulum.duration.Duration) -> builtins.int*
+in_days <func>
+def (self: pendulum.duration.Duration) -> builtins.int*
+in_hours <func>
+def (self: pendulum.duration.Duration) -> builtins.int*
+in_minutes <func>
+def (self: pendulum.duration.Duration) -> builtins.int*
+__repr__ <func>
+def (pendulum.duration.Duration) -> builtins.str
+_check_read <func>
+timeout
+_parse_posix_tz <func>
+def (self: pendulum.tz.zoneinfo.reader.Reader, fd: typing.IO[Any]) -> pendulum.tz.zoneinfo.posix_timezone.PosixTimezone
+hours <func>
+def (self: pendulum.period.Period) -> builtins.int
+minutes <func>
+def (self: pendulum.period.Period) -> builtins.int
+in_weeks <func>
+def (self: pendulum.period.Period) -> builtins.int
+in_days <func>
+def (self: pendulum.period.Period) -> builtins.int
+in_words <func>
+timeout
+__repr__ <func>
+def (pendulum.period.Period) -> builtins.str
+offset <func>
+def (self: pendulum.datetime.DateTime) -> builtins.int*
+offset_hours <func>
+def (self: pendulum.datetime.DateTime) -> builtins.float
+is_utc <func>
+def (self: pendulum.datetime.DateTime) -> builtins.bool
+__str__ <func>
+def (pendulum.datetime.DateTime) -> builtins.str
+__repr__ <func>
+def (pendulum.datetime.DateTime) -> builtins.str
+is_future <func>
+any
+is_past <func>
+any
+is_same_day <func>
+timeout
+is_anniversary <func>
+timeout
+_add_timedelta_ <func>
+def (self: pendulum.datetime.DateTime, delta: pendulum.duration.Duration) -> Union[pendulum.datetime.DateTime, pendulum.datetime.DateTime]
+def (self: pendulum.datetime.DateTime, delta: pendulum.period.Period) -> pendulum.datetime.DateTime
+_subtract_timedelta <func>
+def (self: pendulum.datetime.DateTime, delta: pendulum.duration.Duration) -> pendulum.datetime.DateTime
+def (self: pendulum.datetime.DateTime, delta: pendulum.period.Period) -> pendulum.datetime.DateTime
+diff <func>
+timeout
+next <func>
+timeout
+previous <func>
+timeout
+__add__ <func>
+def (pendulum.datetime.DateTime, builtins.list[pendulum.tz.zoneinfo.transition.Transition]) -> builtins._NotImplementedType
+def (pendulum.datetime.DateTime, builtins.set[pendulum.time.Time]) -> builtins._NotImplementedType
+def (pendulum.datetime.DateTime, builtins.dict[builtins.str, typing.IO[Any]]) -> builtins._NotImplementedType
+__radd__ <func>
+timeout
+day_of_year <func>
+def (self: pendulum.date.Date) -> builtins.int
+_convert <func>
+def (self: pendulum.tz.timezone.FixedTimezone, dt: pendulum.datetime.DateTime) -> Union[pendulum.datetime.DateTime, pendulum.datetime.DateTime]
+def (self: pendulum.tz.timezone.FixedTimezone, dt: datetime.datetime) -> Union[datetime.datetime*, datetime.datetime]
+dst <func>
+def (self: pendulum.tz.timezone.FixedTimezone, dt: builtins.list[pendulum.tz.zoneinfo.transition.Transition]) -> datetime.timedelta*
+def (self: pendulum.tz.timezone.FixedTimezone, dt: builtins.set[pendulum.time.Time]) -> datetime.timedelta*
+def (self: pendulum.tz.timezone.FixedTimezone, dt: builtins.dict[builtins.str, typing.IO[Any]]) -> datetime.timedelta*
+tzname <func>
+def (self: pendulum.tz.timezone.FixedTimezone, dt: builtins.list[pendulum.tz.zoneinfo.transition.Transition]) -> builtins.str
+def (self: pendulum.tz.timezone.FixedTimezone, dt: builtins.set[pendulum.time.Time]) -> builtins.str
+def (self: pendulum.tz.timezone.FixedTimezone, dt: builtins.dict[builtins.str, typing.IO[Any]]) -> builtins.str
+timezone <func>
+def (name: builtins.int, extended: builtins.int =) -> Any
+def (name: builtins.int, extended: builtins.bool =) -> Any
+def (name: builtins.int, extended: builtins.float =) -> Any
+get_available_parsers <func>
+def () -> builtins.list[builtins.str*]
+get_available_parsers <func>
+def () -> builtins.list[builtins.str*]
+get_available_parsers <func>
+def () -> builtins.list[builtins.str*]
+_get_resource <func>
+def (resource_url: builtins.str) -> Tuple[Union[builtins.str, None], Any]
+make_data_uri <func>
+def (mimetype: builtins.str, data: builtins.bytes) -> builtins.str
+get_available_parsers
+def () -> builtins.list[builtins.str*]
+_get_resource
+def (resource_url: builtins.str) -> Tuple[Union[builtins.str, None], Any]
+make_data_uri
+def (mimetype: builtins.str, data: builtins.bytes) -> builtins.str
+_get_options
+def () -> argparse.Namespace
+_get_resource
+def (resource_url: builtins.str) -> Tuple[Union[builtins.str, None], Any]
+get_available_parsers
+def () -> builtins.list[builtins.str*]
+_get_resource
+def (resource_url: builtins.str) -> Tuple[Union[builtins.str, None], Any]
+make_data_uri
+def (mimetype: builtins.str, data: builtins.bytes) -> builtins.str
+_get_options
+def () -> argparse.Namespace
+_get_resource
+def (resource_url: builtins.str) -> Tuple[Union[builtins.str, None], Any]
+decode
+def (string: builtins.bytes, encodings: builtins.list[builtins.str] =) -> builtins.str
+encode
+def (string: builtins.str, encodings: builtins.list[builtins.str] =) -> builtins.bytes
+__init__
+def (self: pendulum.tz.exceptions.NonExistingTime, dt: builtins.object)
+__init__
+def (self: pendulum.tz.exceptions.AmbiguousTime, dt: builtins.object)
+__init__
+def (self: pendulum.tz.zoneinfo.exceptions.InvalidTimezone, name: builtins.object)
+__init__
+def (self: pendulum.tz.zoneinfo.exceptions.InvalidPosixSpec, spec: builtins.object)
+f
+def (a: builtins.list[builtins.str], b: Any, c: Any) -> Any
+def (a: builtins.str, b: Any, c: Any) -> Any
+def (a: builtins.list[def (*Any, **Any) -> Any], b: Any, c: Any) -> Any
+def [T9] (a: builtins.list[T9`9], b: Any, c: Any) -> Any
+def (a: builtins.list[builtins.bytes], b: Any, c: Any) -> Any
+def (a: builtins.bool, b: Any, c: Any) -> Any
+def (a: builtins.bytes, b: Any, c: Any) -> Any
+def (a: builtins.float, b: Any, c: Any) -> Any
+def (a: builtins.int, b: Any, c: Any) -> Any
+def (a: builtins.list[builtins.float], b: Any, c: Any) -> Any
+__init__
+def (self: pendulum.tz.zoneinfo.transition_type.TransitionType, offset: builtins.int, is_dst: builtins.bool, abbr: builtins.str)
+offset
+def (self: pendulum.tz.zoneinfo.transition_type.TransitionType) -> builtins.int
+abbreviation
+def (self: pendulum.tz.zoneinfo.transition_type.TransitionType) -> builtins.str
+is_dst
+def (self: pendulum.tz.zoneinfo.transition_type.TransitionType) -> builtins.bool
+utcoffset
+def (self: pendulum.tz.zoneinfo.transition_type.TransitionType) -> datetime.timedelta
+__repr__
+def (pendulum.tz.zoneinfo.transition_type.TransitionType) -> builtins.str
+_parse_abbr
+def (text: builtins.str) -> builtins.str
+_parse_offset
+def (text: builtins.str, sign: builtins.float =) -> builtins.float
+__init__
+def (self: pendulum.tz.zoneinfo.posix_timezone.PosixTransition, offset: builtins.int)
+offset
+def (self: pendulum.tz.zoneinfo.posix_timezone.PosixTransition) -> builtins.int
+trans_offset
+def (self: pendulum.tz.zoneinfo.posix_timezone.PosixTransition, is_leap: builtins.object, jan1_weekday: builtins.object)
+__init__
+def (self: pendulum.tz.zoneinfo.posix_timezone.JPosixTransition, day: builtins.int, offset: builtins.int)
+day
+def (self: pendulum.tz.zoneinfo.posix_timezone.JPosixTransition) -> builtins.int
+trans_offset
+def (self: pendulum.tz.zoneinfo.posix_timezone.JPosixTransition, is_leap: builtins.object, jan1_weekday: builtins.object) -> builtins.int
+__init__
+def (self: pendulum.tz.zoneinfo.posix_timezone.NPosixTransition, day: builtins.int, offset: builtins.int)
+day
+def (self: pendulum.tz.zoneinfo.posix_timezone.NPosixTransition) -> builtins.int
+trans_offset
+def (self: pendulum.tz.zoneinfo.posix_timezone.NPosixTransition, is_leap: builtins.object, jan1_weekday: builtins.object) -> builtins.int
+__init__
+def (self: pendulum.tz.zoneinfo.posix_timezone.MPosixTransition, month: builtins.int, week: builtins.int, weekday: builtins.int, offset: builtins.int)
+month
+def (self: pendulum.tz.zoneinfo.posix_timezone.MPosixTransition) -> builtins.int
+week
+def (self: pendulum.tz.zoneinfo.posix_timezone.MPosixTransition) -> builtins.int
+weekday
+def (self: pendulum.tz.zoneinfo.posix_timezone.MPosixTransition) -> builtins.int
+get_available_parsers
+def () -> builtins.list[builtins.str*]
+_get_resource
+def (resource_url: builtins.str) -> Tuple[Union[builtins.str, None], Any]
+make_data_uri
+def (mimetype: builtins.str, data: builtins.bytes) -> builtins.str
+_get_options
+def () -> argparse.Namespace
+_get_resource
+def (resource_url: builtins.str) -> Tuple[Union[builtins.str, None], Any]
+get_available_parsers
+def () -> builtins.list[builtins.str*]
+_get_resource
+def (resource_url: builtins.str) -> Tuple[Union[builtins.str, None], Any]
+make_data_uri
+def (mimetype: builtins.str, data: builtins.bytes) -> builtins.str
+_get_options
+def () -> argparse.Namespace
+_get_resource
+def (resource_url: builtins.str) -> Tuple[Union[builtins.str, None], Any]

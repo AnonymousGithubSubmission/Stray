@@ -10,6 +10,7 @@ from typing import Tuple, List
 
 # Import modules
 import numpy as np
+from numpy import ndarray
 # from scipy.signal import convolve2d
 import scipy
 from loguru import logger
@@ -44,6 +45,12 @@ from loguru import logger
 
 
 
+def cell_coverage(state): # div可解
+    """Compute for the live cell coverage for the whole board
+
+    """
+    return np.sum(state) / np.product(state.shape)
+
 def convolve2d(in1:np.ndarray, in2:np.ndarray, mode:str='full', boundary:str='fill', fillvalue:int=0)->np.ndarray:
     pass
 def _count_neighbors(X):
@@ -76,9 +83,10 @@ def life_rule(X, rulestring):
     """
     birth_req, survival_req = _parse_rulestring(rulestring)
     neighbors = _count_neighbors(X)
-    birth_rule = (X == 0) & (np.isin(neighbors, birth_req))
-    survival_rule = (X == 1) & (np.isin(neighbors, survival_req))
-    return birth_rule | survival_rule
+    return (X == 0) & np.isin(neighbors, birth_req)
+    # birth_rule = (X == 0) & (np.isin(neighbors, birth_req))
+    # survival_rule = (X == 1) & (np.isin(neighbors, survival_req))
+    # return birth_rule | survival_rule
 def conway_classic(X):
     """The classic Conway's Rule for Game of Life (B3/S23)"""
     return life_rule(X, rulestring="B3/S23")
@@ -94,12 +102,6 @@ def shannon_entropy(state): # 无解 rsub
     one_probs = 1 - zero_probs
     return -np.sum(np.log2([zero_probs, one_probs]))
 
-
-def cell_coverage(state): # div可解
-    """Compute for the live cell coverage for the whole board
-
-    """
-    return np.sum(state) / np.product(state.shape)
 
 
 
@@ -197,7 +199,7 @@ class Board:
         """
         try:
             row, col = loc
-            height, width = lifeform.size
+            height, width = lifeform.size()
             self.state[row : row + height, col : col + width] = lifeform.layout()
         except ValueError:
             logger.error("Lifeform is out-of-bounds!")
@@ -341,8 +343,9 @@ class Custom(Lifeform):
         self.validate_input_shapes(np.array(X))
         self.X = X
 
-    def validate_input_values(self, X): ###
+    def validate_input_values(self, X:ndarray): ###
         """Check if all elements are binary"""
+        ( X == True | X == True).all()
         if not ((X == 0) | (X == 1) | (X is True) | (X is False)).all():
             msg = "Input array should only contain {0,1} or {True,False}"
             logger.error(msg)
@@ -746,9 +749,10 @@ def cells2rle(cells_str):
 
     """
     if isinstance(cells_str, str):
-        cells_str = cells_str.replace("\r\n", "\n").split("\n")
-
-    cells_str = "\n".join(l for l in cells_str if not l.startswith("!"))
+        cells_str1 = cells_str.replace("\r\n", "\n").split("\n")
+    else:
+        cells_str1 = cells_str
+    cells_str = "\n".join(l for l in cells_str1 if not l.startswith("!"))
     blocks = re.findall("(\n+|\\.+|O+)", cells_str)
     parse_dict = {"\n": "$", ".": "b", "O": "o"}
     blocks = [

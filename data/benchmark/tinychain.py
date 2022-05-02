@@ -87,24 +87,24 @@ class Params:
     # elapsed since being mined.
     #
     # This is "100" in bitcoin core.
-    COINBASE_MATURITY = 2
+    COINBASE_MATURITY:int = 2
 
     # Accept blocks timestamped as being from the future, up to this amount.
-    MAX_FUTURE_BLOCK_TIME = (60 * 60 * 2)
+    MAX_FUTURE_BLOCK_TIME:int = (60 * 60 * 2)
 
     # The number of Belushis per coin. #realname COIN
-    BELUSHIS_PER_COIN = int(100e6)
+    BELUSHIS_PER_COIN:int = int(100e6)
 
-    TOTAL_COINS = 21_000_000
+    TOTAL_COINS:int = 21_000_000
 
     # The maximum number of Belushis that will ever be found.
-    MAX_MONEY = BELUSHIS_PER_COIN * TOTAL_COINS
+    MAX_MONEY:int = BELUSHIS_PER_COIN * TOTAL_COINS
 
     # The duration we want to pass between blocks being found, in seconds.
     # This is lower than Bitcoin's configuation (10 * 60).
     #
     # #realname PowTargetSpacing
-    TIME_BETWEEN_BLOCKS_IN_SECS_TARGET = 1 * 60
+    TIME_BETWEEN_BLOCKS_IN_SECS_TARGET:int = 1 * 60
 
     # The number of seconds we want a difficulty period to last.
     #
@@ -112,7 +112,7 @@ class Params:
     # is configured to target difficulty periods of (10 * 2016) minutes.
     #
     # #realname PowTargetTimespan
-    DIFFICULTY_PERIOD_IN_SECS_TARGET = (60 * 60 * 10)
+    DIFFICULTY_PERIOD_IN_SECS_TARGET:int = (60 * 60 * 10)
 
     # After this number of blocks are found, adjust difficulty.
     #
@@ -122,12 +122,12 @@ class Params:
 
     # The number of right-shifts applied to 2 ** 256 in order to create the
     # initial difficulty target necessary for mining a block.
-    INITIAL_DIFFICULTY_BITS = 24
+    INITIAL_DIFFICULTY_BITS:int = 24
 
     # The number of blocks after which the mining subsidy will halve.
     #
     # #realname SubsidyHalvingInterval
-    HALVE_SUBSIDY_AFTER_BLOCKS_NUM = 210_000
+    HALVE_SUBSIDY_AFTER_BLOCKS_NUM:int = 210_000
 
     
 # Used to represent the specific output within a transaction.
@@ -296,14 +296,46 @@ chain_lock = threading.RLock()
 #     return dec
 
 
+utxo_set: MutableMapping[OutPoint, UnspentTxOut] = {}
 orphan_blocks: List[Block] = []
+def locate_block(block_hash, chain=None): # ～
+    chains = [chain] if chain else [active_chain]
 
-# Used to signify the active chain in `locate_block`.
-ACTIVE_CHAIN_IDX = 0
+    for chain_idx, chain in enumerate(chains):
+        for height, block in enumerate(chain):
+            if block.id == block_hash:
+                return (block, height, chain_idx)
+def validate_txn2(txn,
+                 as_coinbase = False,
+                 siblings_in_block = None,
+                 allow_utxo_from_mempool = True,
+                 ):
+    """
+    Validate a single transaction. Used in various contexts, so the
+    parameters facilitate different uses.
+    """
+    txn.validate_basics(as_coinbase=as_coinbase)
+
+    available_to_spend = 0
+
+    for i, txin in enumerate(txn.txins):
+        utxo = utxo_set.get(txin.to_spend)
+
 def txn_iterator(chain): # ～
     return (
         (txn, block, height)
         for height, block in enumerate(chain) for txn in block.txns)
+def get_median_time_past(num_last_blocks):
+    """Grep for: GetMedianTimePast."""
+    last_n_blocks = active_chain[::-1][:num_last_blocks]
+
+    if not last_n_blocks:
+        return 0
+
+    return last_n_blocks[len(last_n_blocks) // 2].timestamp
+# Used to signify the active chain in `locate_block`.
+ACTIVE_CHAIN_IDX = 0
+
 def find_txout_for_txin(txin, chain): # ～
     txid, txout_idx = txin.to_spend # if to_speed None this will be an error
 
@@ -311,14 +343,10 @@ def find_txout_for_txin(txin, chain): # ～
         if tx.id == txid:
             txout = tx.txouts[txout_idx] # List may not be indexed
             return (txout, tx, txout_idx, tx.is_coinbase, height)
-# @with_lock(chain_lock)
-def locate_block(block_hash, chain=None): # ～
-    chains = [chain] if chain else [active_chain, *side_branches]
 
-    for chain_idx, chain in enumerate(chains):
-        for height, block in enumerate(chain):
-            if block.id == block_hash:
-                return (block, height, chain_idx)
+
+# @with_lock(chain_lock)
+
     # return (None, None, None)
 
 # @with_lock(chain_lock)
@@ -538,14 +566,7 @@ def try_reorg(branch:List[Block], branch_idx:int, fork_idx:int)->bool:
     return True
 
 # ～
-def get_median_time_past(num_last_blocks):
-    """Grep for: GetMedianTimePast."""
-    last_n_blocks = active_chain[::-1][:num_last_blocks]
 
-    if not last_n_blocks:
-        return 0
-
-    return last_n_blocks[len(last_n_blocks) // 2].timestamp
 
 
 # Chain Persistance
@@ -578,7 +599,6 @@ def load_from_disk():
 # UTXO set
 # ----------------------------------------------------------------------------
 
-utxo_set: MutableMapping[OutPoint, UnspentTxOut] = {}
 
 # ～
 def add_to_utxo(txout, tx, idx, is_coinbase, height):
@@ -594,10 +614,10 @@ def rm_from_utxo(txid, txout_idx):
 # ～
 def find_utxo_in_list(txin, txns):
     txid, txout_idx = txin.to_spend
-    try:
-        txout = [t for t in txns if t.id == txid][0].txouts[txout_idx]
-    except Exception:
-        return None
+    # try:
+    txout = [t for t in txns if t.id == txid][0].txouts[txout_idx]
+    # except Exception:
+    #     return None
 
     return UnspentTxOut(txout.value, txout.to_address, txid=txid, txout_idx=txout_idx, is_coinbase=False, height=-1)
 
@@ -738,6 +758,7 @@ def mine_forever():
             save_to_disk()
 
 
+
 # Validation
 # ----------------------------------------------------------------------------
 
@@ -757,7 +778,7 @@ def validate_txn(txn,
 
     for i, txin in enumerate(txn.txins):
         utxo = utxo_set.get(txin.to_spend)
-
+        
         if siblings_in_block:
             utxo = utxo or find_utxo_in_list(txin, siblings_in_block)
 
@@ -824,11 +845,11 @@ orphan_txns: List[Transaction] = []
 def find_utxo_in_mempool(txin):
     txid, idx = txin.to_spend
 
-    try:
-        txout = mempool[txid].txouts[idx]
-    except Exception:
-        logger.debug("Couldn't find utxo in mempool for %s", txin)
-        return None
+    # try:
+    txout = mempool[txid].txouts[idx]
+    # except Exception:
+    #     logger.debug("Couldn't find utxo in mempool for %s", txin)
+    #     return None
 
     return UnspentTxOut(
         txout.value, txout.to_address, txid=txid, is_coinbase=False, height=-1, txout_idx=idx)
@@ -1127,12 +1148,14 @@ class TxUnlockError(BaseException):
 
 
 class TxnValidationError(BaseException):
+    to_orphan: Transaction
     def __init__(self, *args, to_orphan: Transaction = None, **kwargs):
         super().__init__(*args, **kwargs)
         self.to_orphan = to_orphan
 
 
 class BlockValidationError(BaseException):
+    to_orphan: Block
     def __init__(self, *args, to_orphan: Block = None, **kwargs):
         super().__init__(*args, **kwargs)
         self.to_orphan = to_orphan
@@ -1200,7 +1223,7 @@ def build_spend_message(to_spend, pk, sequence, txouts:Any):
         binascii.hexlify(pk).decode() + serialize(txouts)).encode()
 
 # ~
-def _chunks(l, n)->Generator:
+def _chunks(l, n):
     return (l[i:i + n] for i in range(0, len(l), n))
 
 

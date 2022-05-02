@@ -12,7 +12,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from mypy.metastore import MetadataStore, FilesystemMetadataStore, SqliteMetadataStore
+from extyper.metastore import MetadataStore, FilesystemMetadataStore, SqliteMetadataStore
 
 
 def make_cache(input_dir: str, sqlite: bool) -> MetadataStore:

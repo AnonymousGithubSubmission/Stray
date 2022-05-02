@@ -1,5 +1,6 @@
 {
     "numpy":["ndarray"],
     "torch":["Tensor"],
-    "socket":["socket"]
+    "socket":["socket"],
+    "datetime": ["datetime", "timezone", "tzinfo", "date"]
 }

@@ -15,7 +15,7 @@ from typing import Any, Dict, Optional, Set
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from mypy.metastore import FilesystemMetadataStore, MetadataStore, SqliteMetadataStore
+from extyper.metastore import FilesystemMetadataStore, MetadataStore, SqliteMetadataStore
 
 
 def make_cache(input_dir: str, sqlite: bool) -> MetadataStore:

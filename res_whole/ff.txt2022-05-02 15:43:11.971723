@@ -1,0 +1,7 @@
+builtins.list[builtins.str*]
+Tuple[Union[builtins.str, None], Any]
+builtins.str
+builtins.str
+builtins.str
+builtins.bytes
+argparse.Namespace

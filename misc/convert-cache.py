@@ -10,7 +10,7 @@ import os
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import argparse
-from mypy.metastore import FilesystemMetadataStore, SqliteMetadataStore
+from extyper.metastore import FilesystemMetadataStore, SqliteMetadataStore
 
 
 def main() -> None:

@@ -23,7 +23,7 @@ from sphinx.util.docfields import Field
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 sys.path.insert(0, os.path.abspath('../..'))
 
-from mypy.version import __version__ as mypy_version
+from extyper.version import __version__ as mypy_version
 
 # -- General configuration ------------------------------------------------
 
