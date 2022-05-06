@@ -857,3 +857,23 @@ _get_options
 def () -> argparse.Namespace
 _get_resource
 def (resource_url: builtins.str) -> Tuple[Union[builtins.str, None], Any]
+get_available_parsers
+def () -> builtins.list[builtins.str*]
+_get_resource
+def (resource_url: builtins.str) -> Tuple[Union[builtins.str, None], Any]
+make_data_uri
+def (mimetype: builtins.str, data: builtins.bytes) -> builtins.str
+_get_options
+def () -> argparse.Namespace
+_get_resource
+def (resource_url: builtins.str) -> Tuple[Union[builtins.str, None], Any]
+get_available_parsers
+def () -> builtins.list[builtins.str*]
+_get_resource
+def (resource_url: builtins.str) -> Tuple[Union[builtins.str, None], Any]
+make_data_uri
+def (mimetype: builtins.str, data: builtins.bytes) -> builtins.str
+_get_options
+def () -> argparse.Namespace
+_get_resource
+def (resource_url: builtins.str) -> Tuple[Union[builtins.str, None], Any]

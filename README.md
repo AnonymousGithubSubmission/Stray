@@ -2,12 +2,9 @@
 
 
 
-## ExTyper: Towards Robust and Correct Type Prediction
-### Update from 2022.2.23
-* Authors forgot to put the examples mentioned in the submited paper to this package until 2022.2.23 and made an update to fix this. After then, the examples reside in the example folder.   
-
+## STRAY: a Static Type Recommendation Approach for pYthon
 ### Installation
-ExTyper is built upon [mypy](https://github.com/python/mypy), to run ExTyper, those packages are required. 
+To run STRAY, those packages are required. 
 
 * python3
 * typing_extensions
@@ -17,34 +14,30 @@ ExTyper is built upon [mypy](https://github.com/python/mypy), to run ExTyper, th
 * tomli
 * astunparse
 * datasets
+### Recommendation
 
-After installing required packages, you should be able to play with ExTyper through this script.
-```
-python -m predict file
-```
-The predicted types will be written to result folder. 
-### Prediction
+#### Install Third-Party Dependency of the Recommending Project
+Please ensure that all third-party dependencies have been installed in the same virtual environment as STARY. 
 
-Note that all four projects have third-party dependencies, you have to install corresponding dependencies for accurate predicton. We list all needed pakages here: 
-* numpy
-* torch
-* allennlp
-* ecdsa
-* base58
-* matplotlib
+#### Recommendation
+For those projects without **heavy** third-party dependency, e.g., *htmlark*, STARY can be employed directly to recommend types: 
+python -m predict data/benchmark/htmlark.py predict
 
-The prediction should works fine after the packages are installed, but the result may be slight different from experiment, due to the difference of third-party type stubs. To exactly reproduce the results, you can paste the type stubs in data/pyi to corresponding folder of packages. 
+For those projects with **heavy** third-party dependency, e.g., *relex* and all other projects in the benchmark, running STARY directly would analyze and recommend types for all third-party packages and the recommending project.
+Thus, STARY provide a pre-analysis to only **check** the third-party packages/recommending project and generate type stubs for them. 
 
-Now, run predict.py with corresponding file:
+python -m predict data/benchmark/relex.py check
 
-python -m predict data/benchmark/relex.py
+Then, running STARY directly would only analyze and recommend types for the recommending project. 
 
-python -m predict data/benchmark/seagull.py
+python -m predict data/benchmark/relex.py predict
 
-python -m predict data/benchmark/tinychain.py
-
-python -m predict data/benchmark/htmlark.py
+The commend line format is:
+python -m predict PROJECT MODE
+If the recommending project is a single file (e.g., htmlark, relex, seagull, tinychain), please use the file address directly. 
+If the recommending project is a folder (e.g., pendulum), please use the folder address. 
 
 ### Results
 
+You can reproduce the results following previous instruction. 
 The results reported in the paper have been collected in the evaluation folder. You can conveniently check it. 

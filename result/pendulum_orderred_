@@ -170,3 +170,31 @@ _get_options
 _get_resource
 ['builtins.str']
 ['Tuple[Union[builtins.str, None], Any]']
+get_available_parsers
+['builtins.list[builtins.str*]']
+_get_resource
+['builtins.str']
+['Tuple[Union[builtins.str, None], Any]']
+make_data_uri
+['builtins.str']
+['builtins.bytes']
+['builtins.str']
+_get_options
+[]
+_get_resource
+['builtins.str']
+['Tuple[Union[builtins.str, None], Any]']
+get_available_parsers
+['builtins.list[builtins.str*]']
+_get_resource
+['builtins.str']
+['Tuple[Union[builtins.str, None], Any]']
+make_data_uri
+['builtins.str']
+['builtins.bytes']
+['builtins.str']
+_get_options
+[]
+_get_resource
+['builtins.str']
+['Tuple[Union[builtins.str, None], Any]']
