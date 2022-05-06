@@ -3,6 +3,9 @@
 
 
 ## STRAY: a Static Type Recommendation Approach for pYthon
+
+This is a prototype package for a paper submission. 
+The material mentioned in the paper (i.e., the extended Algorithm 1 and the proof of Theorem 2.1) are in the Appendix folder. 
 ### Installation
 To run STRAY, those packages are required. 
 
