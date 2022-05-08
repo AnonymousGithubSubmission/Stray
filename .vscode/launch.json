@@ -1,0 +1,29 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "console": "integratedTerminal",        
+            //"module": "evaluation.evaluate",
+            "module": "predict",
+            
+            //"args": ["data/benchmark/seagull.py", "predict"],
+            //"args": ["data/benchmark/relex.py", "predict"],
+            "args": ["data/benchmark/htmlark.py", "predict"],
+            //"args": ["data/benchmark/tinychain.py", "predict"],
+            //"args": ["data/benchmark/test_generic.py", "predict"],
+            //"args": ["data/benchmark/duration.py", "predict"],
+            //"args": ["data/benchmark/timezone.py", "predict"],
+            //"args": ["data/benchmark/reader.py", "predict"],
+            
+            //"args": ["data/benchmark/pendulum", "predict"],
+            
+            "justMyCode": false
+        }
+    ]
+}
