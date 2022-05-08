@@ -24,6 +24,7 @@ Please ensure that all third-party dependencies have been installed in the same 
 
 #### Recommendation
 For those projects without **heavy** third-party dependency, e.g., *htmlark*, STARY can be employed directly to recommend types: 
+
 python -m predict data/benchmark/htmlark.py predict
 
 For those projects with **heavy** third-party dependency, e.g., *relex* and all other projects in the benchmark, running STARY directly would analyze and recommend types for all third-party packages and the recommending project.
@@ -36,8 +37,11 @@ Then, running STARY directly would only analyze and recommend types for the reco
 python -m predict data/benchmark/relex.py predict
 
 The commend line format is:
+
 python -m predict PROJECT MODE
+
 If the recommending project is a single file (e.g., htmlark, relex, seagull, tinychain), please use the file address directly. 
+
 If the recommending project is a folder (e.g., pendulum), please use the folder address. 
 
 ### Results
