@@ -52,4 +52,5 @@ python -m predict data/benchmark/pendulum check/predict
 You can reproduce the results following previous instruction. 
 
 The results reported in the paper have been collected in the evaluation folder. You can conveniently check it through evaluate.py. 
+
 python -m evaluation.evaluate
