@@ -42,8 +42,11 @@ The commend line format is:
 python -m predict PROJECT MODE
 
 If the recommending project is a single file (e.g., htmlark, relex, seagull, tinychain), please use the file address directly. 
+
 python -m predict data/benchmark/htmlark.py check/predict
+
 If the recommending project is a folder (e.g., pendulum), please use the folder address. 
+
 python -m predict data/benchmark/pendulum check/predict
 ### Results
 You can reproduce the results following previous instruction. 
